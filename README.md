@@ -1,0 +1,2 @@
+# metadoc
+Metarhia Documentation Generator
