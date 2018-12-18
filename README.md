@@ -1,2 +1,1 @@
-# metadoc
-Metarhia Documentation Generator
+# Metarhia Documentation Generator

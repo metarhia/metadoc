@@ -1,0 +1,31 @@
+{
+  "name": "@metarhia/metadoc",
+  "version": "0.0.0",
+  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "description": "Metarhia Documentation Generator",
+  "license": "MIT",
+  "keywords": [
+    "metarhia",
+    "documentation",
+    "impress",
+    "jstp",
+    "globalstorege"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metarhia/metadoc"
+  },
+  "main": "./metadoc.js",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-metarhia": "^6.0.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
