@@ -1,6 +1,6 @@
 {
-  "name": "@metarhia/metadoc",
-  "version": "0.0.0",
+  "name": "@metarhia/doc",
+  "version": "0.1.0",
   "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
   "description": "Metarhia Documentation Generator",
   "license": "MIT",
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "https://github.com/metarhia/metadoc"
   },
-  "main": "./metadoc.js",
+  "main": "./doc.js",
+  "bin": {
+    "metadoc": "./bin/cli.js"
+  },
   "readmeFilename": "README.md",
   "scripts": {
     "test": "eslint ."
@@ -27,5 +30,8 @@
     "eslint": "^5.9.0",
     "eslint-config-metarhia": "^6.0.0",
     "eslint-plugin-import": "^2.14.0"
+  },
+  "dependencies": {
+    "@metarhia/common": "^1.2.1"
   }
 }

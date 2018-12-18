@@ -1,38 +1,67 @@
-# Metarhia Documentation Generator
+## Interface: example
 
-## Interface: doc
+### One-liner function description
 
-### Introspect interface
+Multi-line expanded function description. Note that all lines should have
+length of 80 or less characters
 
-`introspect(namespace, text)`
-  - `namespace: `[`<Map>`] hash of interfaces
-  - `text: `[`<string>`] data to parse
+`methodName(num, str, arg, flag, arr, data, obj, cb)`
+  - `num: `[`<number>`] argument description
+  - `str: `[`<string>`] dash before and comma after types are optional
+  - `arg: `[`<Array>`]` | `[`<Date>`]` | `[`<Object>`] argument can have
+        multiple types
+  - `flag: `[`<boolean>`] description of argument can have multiple lines, but
+        there should be indentation of 4 spaces after beginning of the first
+        line
+  - `arr: `[`<string[]>`][`<string>`] square braces can be added after `type` to
+        specify that this is array of `type`s
+  - `data` `<CustomType>` custom type can be specified. e.g. this can be
+        instance of some class
+  - `obj: `[`<Object>`] its description
+    - `field1: `[`<Object>`] fields of object can be nested but indentation
+          should increase by 2 more spaces for each level
+      - `field2: <any>`
+    - `field3: `[`<symbol>`] comment is optional, but type is obligatory
+  - `cb: `[`<Function>`] function description and/or example of usage. e.g.
+        cb(arg1, ...arg2)
+    - `arg1: `[`<Map>`] arguments of function can also be nested using the same
+          rules provided for `Object`
+    - `arg2: `[`<Array>`]
 
-*Returns:* [`<Map>`] hash of hash of records, { title, description, parameters,
-    comments }
+*Returns:* [`<Object>`] description of returned value. If this is an object or
+    function with defined structure, then it should be described by rules
+    defined above
+  - `numArr: `[`<number[]>`][`<number>`]
+  - `strArr: `[`<string[]>`][`<string>`]
 
+*Throws:* [`<TypeError>`] conditions causing error. Empty lines between comments
+    after parameters are optional
 
-### Parse function signature
+*Deprecated:* should be added if this method was deprecated. Description should
+    have reason for deprecation and method to use instead if any. e.g. Removed
+    due to incompatibility with `moduleName` in version 2.0.0. Use
+    `newMethodName` instead.
 
-`parseSignature(fn, text, start)`
-  - `fn: `[`<Function>`]` | `[`<RegExp>`] to be searched
-  - `text: `[`<string>`] to be searched in
-  - `start: `[`<number>`] position to start searching from
+*Example:* 
+```js
+ methodName(1, '2', {}, false, ['3'], data, {}, fn);
+```
 
-*Returns:* [`<Object>`] function signature
-  - `title: `[`<string>`] short function description
-  - `description: `[`<string>`] extended function description
-  - `parameters: `[`<string[]>`][`<string>`] function parameters
-  - `comments: `[`<string[]>`][`<string>`] comments about returned value, thrown
-        errors, deprecation and usage
+*Example:* 
+```js
 
+methodName(4, '5', {},
+  false, ['6'], data, {});
+```
 
-### Generate md from interfaces inventory
+*Result:* 
+```js
 
-`generateMd(inventory)`
-  - `inventory: `[`<Map>`] hash of map of records, { method, title, parameters }
-
-*Returns:* [`<string>`] md document
+{
+  numArr: [4, 5, 6],
+  strArr: ['4', '5', '6'],
+}
+```
 
 
 [`<Object>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
