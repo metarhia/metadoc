@@ -21,17 +21,20 @@
   },
   "readmeFilename": "README.md",
   "scripts": {
-    "test": "eslint ."
+    "doc": "./bin/cli.js -c",
+    "lint": "eslint .",
+    "test": "eslint . && ./bin/cli.js -d test/ test/example.js"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^5.12.0",
     "eslint-config-metarhia": "^6.0.0",
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
-    "@metarhia/common": "^1.2.1"
+    "@metarhia/common": "^1.2.1",
+    "yargs": "^12.0.5"
   }
 }

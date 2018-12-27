@@ -1,5 +1,3 @@
-## API
-
 ### Interface: example
 
 #### methodName(num, str, arg, flag, arr, data, obj, cb)

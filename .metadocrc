@@ -1,0 +1,9 @@
+{
+	"headerFile": "doc/header.md",
+	"footerFile": "doc/footer.md",
+	"files": [
+		"doc.js"
+	],
+	"customLinks": {},
+	"outputDir": "doc/"
+}
