@@ -8,5 +8,5 @@ module.exports = Object.assign(
   {},
   introspector,
   generator,
-  types,
+  types
 );
