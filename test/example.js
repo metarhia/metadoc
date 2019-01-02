@@ -52,6 +52,39 @@
 // }
 const methodName = (num, str, arg, flag, arr, data, obj, cb) => {};
 
+// ExampleClass description
+class ExampleClass {
+
+  // ExampleClass constructor description
+  //   arg1 <Object>
+  //   arg2 <string>
+  constructor(arg1, arg2) {
+  }
+
+  // method1 description
+  //   arr <Array>
+  method1(arr) {
+  }
+
+  // method2 description
+  //   num <number>
+  static method2(num) {
+  }
+}
+
+// PrototypeClass description and PrototypeClass constructor description
+//   arg1 <Object>
+//   arg2 <string>
+const PrototypeClass = function(arg1, arg2) {};
+
+// method1 description
+//   num <number>
+PrototypeClass.prototype.method1 = function(num) {};
+
+// method2 description
+//   arr <Array>
+PrototypeClass.method2 = function(num) {};
+
 // List of supported standard types:
 //   `Primitive`
 //   `boolean`,
@@ -93,4 +126,6 @@ const methodName = (num, str, arg, flag, arr, data, obj, cb) => {};
 
 module.exports = {
   methodName,
+  ExampleClass,
+  PrototypeClass,
 };
