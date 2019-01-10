@@ -4,8 +4,8 @@
 
 ## Installation
 
-```cmd
-$ npm install @metarhia/doc
+```shell
+$ npm install -g @metarhia/doc
 ```
 
 ## Cli usage
