@@ -35,8 +35,8 @@ Options:
   - `namespace`: [`<Map>`] hash of interfaces
   - `text`: [`<string>`] data to parse
 
-*Returns:* [`<Map>`] hash of hash of records, { title, description, parameters,
-    comments }
+*Returns:* [`<Map>`] hash of hash of records, `{ title, description, parameters,
+    comments }`
 
 
 Introspect interface
@@ -51,11 +51,11 @@ Introspect interface
 *Returns:* [`<Object>`] function signature
   - `title`: [`<string>`] short function description
   - `description`: [`<string>`] extended function description
-  - `parameters`: [`<Object[]>`][`<Object>`] function parameters, { name, types,
-        nonStandardTypes, comment, offset }
+  - `parameters`: [`<Object[]>`][`<Object>`] function parameters, `{ name,
+        types, nonStandardTypes, comment, offset }`
   - `comments`: [`<Object[]>`][`<Object>`] comments about returned value, thrown
-        errors, deprecation and usage, { name, types, nonStandardTypes, comment
-        }
+        errors, deprecation and usage, `{ name, types, nonStandardTypes, comment
+        }`
 
 
 Parse function signature
@@ -63,7 +63,8 @@ Parse function signature
 
 #### generateMd(inventory, options)
 
-  - `inventory`: [`<Map>`] hash of map of records, { method, title, parameters }
+  - `inventory`: [`<Map>`] hash of map of records, `{ method, title, parameters
+        }`
   - `options`: [`<Object>`]
     - `header`: [`<string>`] text before api documentation
     - `footer`: [`<string>`] text after api documentation
