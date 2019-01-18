@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/metarhia/metadoc"
   },
-  "main": "./doc.js",
+  "main": "doc.js",
   "bin": {
     "metadoc": "./bin/cli.js"
   },
@@ -25,6 +25,10 @@
     "lint": "eslint .",
     "test": "eslint . && ./bin/cli.js -d test/ test/example.js"
   },
+  "files": [
+    "lib/",
+    "bin/"
+  ],
   "engines": {
     "node": ">=6.0.0"
   },
