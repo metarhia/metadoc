@@ -29,33 +29,32 @@ _Returns:_ [`<Object>`] description of returned value. If this is an object or
 - `numArr`: [`<number[]>`][`<number>`]
 - `strArr`: [`<string[]>`][`<string>`]
 
-
 One-liner function description
 
 Multi-line expanded function description. Note that all lines should have
 length of 80 or less characters
 
-*Throws:* [`<TypeError>`] conditions causing error. Empty lines between comments
+_Throws:_ [`<TypeError>`] conditions causing error. Empty lines between comments
     after parameters are optional
 
-*Deprecated:* should be added if this method was deprecated. Description should
+_Deprecated:_ should be added if this method was deprecated. Description should
     have reason for deprecation and method to use instead if any. e.g. Removed
     due to incompatibility with `moduleName` in version 2.0.0. Use
     `newMethodName` instead.
 
-*Example:* 
+_Example:_
 ```js
  methodName(1, '2', {}, false, ['3'], data, {}, fn);
 ```
 
-*Example:* 
+_Example:_
 ```js
 
 methodName(4, '5', {},
   false, ['6'], data, {});
 ```
 
-*Result:* 
+_Result:_
 ```js
 
 {
@@ -68,14 +67,12 @@ methodName(4, '5', {},
 #### ExampleClass()
 
 
-
 ExampleClass description
 
 
 #### ExampleClass.method2(num)
 
 - `num`: [`<number>`]
-
 
 method2 description
 
@@ -85,7 +82,6 @@ method2 description
 - `arg1`: [`<Object>`]
 - `arg2`: [`<string>`]
 
-
 ExampleClass constructor description
 
 
@@ -93,12 +89,10 @@ ExampleClass constructor description
 
 - `arr`: [`<Array>`]
 
-
 method1 description
 
 
 #### PrototypeClass()
-
 
 
 PrototypeClass description and PrototypeClass constructor description
@@ -108,7 +102,6 @@ PrototypeClass description and PrototypeClass constructor description
 
 - `num`: [`<number>`]
 
-
 method1 description
 
 
@@ -117,14 +110,12 @@ method1 description
 - `arg1`: [`<Object>`]
 - `arg2`: [`<string>`]
 
-
 PrototypeClass description and PrototypeClass constructor description
 
 
 #### PrototypeClass.prototype.method1(num)
 
 - `num`: [`<number>`]
-
 
 method1 description
 

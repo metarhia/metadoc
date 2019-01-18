@@ -38,7 +38,6 @@ Options:
 _Returns:_ [`<Map>`] hash of hash of records, `{ title, description, parameters,
     comments }`
 
-
 Introspect interface
 
 
@@ -57,7 +56,6 @@ _Returns:_ [`<Object>`] function signature
       errors, deprecation and usage, `{ name, types, nonStandardTypes, comment
       }`
 
-
 Parse function signature
 
 
@@ -71,7 +69,6 @@ Parse function signature
   - `customLinks`: [`<Array[]>`][`<Array>`] custom types links
 
 _Returns:_ [`<string>`] md document
-
 
 Generate md from interfaces inventory
 
