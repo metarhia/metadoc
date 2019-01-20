@@ -53,8 +53,7 @@ const args = yargs
   .option('no-config', {
     type: 'boolean',
     describe: 'do not look for a configuration file',
-  })
-  .argv;
+  }).argv;
 
 const loadFiles = files => {
   const result = [];
@@ -128,8 +127,8 @@ const getConfig = args => {
     config.outputFile = cfg.outputFile;
   }
 
-  config.writeToStdout = args.writeToStdout ||
-    !(config.outputFile || config.outputDir);
+  config.writeToStdout =
+    args.writeToStdout || !(config.outputFile || config.outputDir);
 
   return config;
 };
@@ -137,10 +136,12 @@ const getConfig = args => {
 const getData = () => {
   let data = '';
   for (const module in require.cache) {
-    if (!module.includes('node_modules') &&
+    if (
+      !module.includes('node_modules') &&
       module !== __filename &&
       fs.existsSync(module) &&
-      common.fileExt(module) !== 'node') {
+      common.fileExt(module) !== 'node'
+    ) {
       data += fs.readFileSync(module, 'utf8') + '\n';
     }
   }

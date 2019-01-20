@@ -101,7 +101,6 @@ const asyncFunc = async () => {};
 //   prop1 <string> property
 //   prop2 <Object>
 class ExampleClass {
-
   // ExampleClass constructor description
   //   arg1 <Object>
   //   arg2 <string>
@@ -112,13 +111,11 @@ class ExampleClass {
 
   // method1 description
   //   arr <Array>
-  method1(arr) {
-  }
+  method1(arr) {}
 
   // method2 description
   //   num <number>
-  static method2(num) {
-  }
+  static method2(num) {}
 }
 
 // PrototypeClass description and PrototypeClass constructor description
