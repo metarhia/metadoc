@@ -26,6 +26,10 @@ const args = yargs
     type: 'string',
     describe: 'file with footer for the resulting doc file',
   })
+  .option('remove-interface', {
+    type: 'boolean',
+    describe: 'do not add interface header',
+  })
   .option('write-to-stdout', {
     alias: 'o',
     type: 'boolean',
@@ -59,6 +63,7 @@ const getConfig = args => {
   const config = {
     header: cfg.header || args.header || '',
     footer: cfg.footer || args.footer || '',
+    removeInterface: cfg.removeInterface || args.removeInterface || false,
     files: common.merge(args._, cfg.files || []),
     customLinks: [],
     outputDir: args.outputDir,
