@@ -66,7 +66,6 @@ _Result:_
 
 #### ExampleClass()
 
-
 ExampleClass description
 
 
@@ -93,7 +92,6 @@ method1 description
 
 
 #### PrototypeClass()
-
 
 PrototypeClass description and PrototypeClass constructor description
 
