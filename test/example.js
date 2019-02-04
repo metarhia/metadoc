@@ -95,6 +95,7 @@ PrototypeClass.method2 = function(num) {};
 //   `symbol`,
 //   `Object`,
 //   `Date`,
+//   `BigInt`,
 //   `Function`,
 //   `RegExp`,
 //   `DataView`,
