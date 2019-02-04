@@ -61,9 +61,9 @@ const getConfig = args => {
   }
 
   const config = {
-    header: cfg.header || args.header || '',
-    footer: cfg.footer || args.footer || '',
-    removeInterface: cfg.removeInterface || args.removeInterface || false,
+    header: args.header || cfg.header || '',
+    footer: args.footer || cfg.footer || '',
+    removeInterface: args.removeInterface || cfg.removeInterface || false,
     files: common.merge(args._, cfg.files || []),
     customLinks: [],
     outputDir: args.outputDir,
