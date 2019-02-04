@@ -5,6 +5,12 @@
 // One-liner function description
 // Multi-line expanded function description. Note that all lines should have
 // length of 80 or less characters
+// To specify custom arguments signature `Signature:` comment can be used. It
+// also supports multiline
+// Signature: num, str,
+//     arg,
+//     flag[, arr[, data]], obj,
+//     cb
 //   num <number> argument description
 //   str - <string>, dash before and comma after types are optional
 //   arg <Array> | <Date> | <Object> argument can have multiple types
