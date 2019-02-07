@@ -66,6 +66,14 @@ _Result:_
 ```
 
 
+#### restFunc(arg, ...arr)
+
+- `arg`: [`<string>`]
+- `arr`: [`<number[]>`][`<number>`]
+
+Function with rest arguments
+
+
 #### ExampleClass()
 
 ExampleClass description
