@@ -58,6 +58,12 @@
 // }
 const methodName = (num, str, arg, flag, arr, data, obj, cb) => {};
 
+// Function with rest arguments
+// Signature: arg, ...arr
+//   arg <string>
+//   arr <number[]>
+const restFunc = (arg, ...arr) => {};
+
 // ExampleClass description
 class ExampleClass {
 
@@ -133,6 +139,7 @@ PrototypeClass.method2 = function(num) {};
 
 module.exports = {
   methodName,
+  restFunc,
   ExampleClass,
   PrototypeClass,
 };
