@@ -64,6 +64,16 @@ const methodName = (num, str, arg, flag, arr, data, obj, cb) => {};
 //   arr <number[]>
 const restFunc = (arg, ...arr) => {};
 
+// Description can also support types like <number>
+//   obj <Object>
+//     field <number>
+//   arg1 comments can contain types like this: <string>
+//   arg2
+//   arg3 arguments do not have to have type or comment
+const typeFunction = (obj, arg1, arg2, arg3) => {};
+
+const noDescriptionFunction = () => {};
+
 // ExampleClass description
 class ExampleClass {
 
@@ -140,6 +150,8 @@ PrototypeClass.method2 = function(num) {};
 module.exports = {
   methodName,
   restFunc,
+  typeFunction,
+  noDescriptionFunction,
   ExampleClass,
   PrototypeClass,
 };

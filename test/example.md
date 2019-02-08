@@ -74,6 +74,20 @@ _Result:_
 Function with rest arguments
 
 
+#### typeFunction(obj, arg1, arg2, arg3)
+
+- `obj`: [`<Object>`]
+  - `field`: [`<number>`]
+- `arg1` comments can contain types like this: [`<string>`]
+- `arg2`
+- `arg3` arguments do not have to have type or comment
+
+Description can also support types like [`<number>`]
+
+
+#### noDescriptionFunction()
+
+
 #### ExampleClass()
 
 ExampleClass description
