@@ -50,6 +50,7 @@ Introspect interface
 _Returns:_ [`<Object>`] function signature
 - `title`: [`<string>`] short function description
 - `description`: [`<string>`] extended function description
+- `argsSignature`: [`<string>`] custom function signature
 - `parameters`: [`<Object[]>`][`<Object>`] function parameters, `{ name, types,
       nonStandardTypes, comment, offset }`
 - `comments`: [`<Object[]>`][`<Object>`] comments about returned value, thrown
