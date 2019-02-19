@@ -72,6 +72,10 @@ const restFunc = (arg, ...arr) => {};
 //   arg3 arguments do not have to have type or comment
 const typeFunction = (obj, arg1, arg2, arg3) => {};
 
+// Function with no arguments
+// Returns: <string>
+const noArgumentsFunction = () => 'str';
+
 const noDescriptionFunction = () => {};
 
 // Async functions are supported
@@ -154,6 +158,7 @@ module.exports = {
   methodName,
   restFunc,
   typeFunction,
+  noArgumentsFunction,
   noDescriptionFunction,
   asyncFunc,
   ExampleClass,
