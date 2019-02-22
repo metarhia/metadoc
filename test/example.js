@@ -74,6 +74,9 @@ const typeFunction = (obj, arg1, arg2, arg3) => {};
 
 const noDescriptionFunction = () => {};
 
+// Async functions are supported
+const asyncFunc = async() => {};
+
 // ExampleClass description
 class ExampleClass {
 
@@ -152,6 +155,7 @@ module.exports = {
   restFunc,
   typeFunction,
   noDescriptionFunction,
+  asyncFunc,
   ExampleClass,
   PrototypeClass,
 };

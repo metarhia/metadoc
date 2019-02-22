@@ -88,6 +88,11 @@ Description can also support types like [`<number>`]
 #### noDescriptionFunction()
 
 
+#### async asyncFunc()
+
+Async functions are supported
+
+
 #### ExampleClass()
 
 ExampleClass description
