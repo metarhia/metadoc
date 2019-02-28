@@ -85,6 +85,13 @@ Function with rest arguments
 Description can also support types like [`<number>`]
 
 
+#### noArgumentsFunction()
+
+_Returns:_ [`<string>`]
+
+Function with no arguments
+
+
 #### noDescriptionFunction()
 
 
