@@ -51,14 +51,12 @@ _Example:_
 
 _Example:_
 ```js
-
 methodName(4, '5', {},
   false, ['6'], data, {});
 ```
 
 _Result:_
 ```js
-
 {
   numArr: [4, 5, 6],
   strArr: ['4', '5', '6'],
@@ -103,6 +101,14 @@ Async functions are supported
 #### ExampleClass()
 
 ExampleClass description
+
+#### ExampleClass.prop1
+
+ - [`<string>`] property
+
+#### ExampleClass.prop2
+
+ - [`<Object>`]
 
 
 #### ExampleClass.method2(num)

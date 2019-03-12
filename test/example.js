@@ -82,12 +82,17 @@ const noDescriptionFunction = () => {};
 const asyncFunc = async() => {};
 
 // ExampleClass description
+// Properties:
+//   prop1 <string> property
+//   prop2 <Object>
 class ExampleClass {
 
   // ExampleClass constructor description
   //   arg1 <Object>
   //   arg2 <string>
   constructor(arg1, arg2) {
+    this.prop1 = arg2;
+    this.prop2 = arg1;
   }
 
   // method1 description
