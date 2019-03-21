@@ -21,9 +21,9 @@
   },
   "readmeFilename": "README.md",
   "scripts": {
-    "doc": "./bin/cli.js -c",
+    "doc": "./bin/cli.js",
     "lint": "eslint .",
-    "test": "eslint . && ./bin/cli.js -d test/ test/example.js"
+    "test": "eslint . && ./bin/cli.js --no-config -d test/ test/example.js"
   },
   "files": [
     "lib/",

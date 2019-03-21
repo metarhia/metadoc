@@ -50,21 +50,52 @@ const args = yargs
     type: 'string',
     describe: 'custom config file',
   })
+  .option('no-config', {
+    type: 'boolean',
+    describe: 'do not look for a configuration file',
+  })
   .argv;
+
+const loadFiles = files => {
+  const result = [];
+  files
+    .map(file => {
+      if (fs.existsSync(file + '.js')) {
+        return file + '.js';
+      } else if (fs.existsSync(file)) {
+        return file;
+      } else {
+        console.error('File does not exist:', file);
+        process.exit(1);
+        return '';
+      }
+    })
+    .forEach(file => {
+      if (fs.statSync(file).isDirectory()) {
+        const subfiles = fs.readdirSync(file).map(f => path.join(file, f));
+        result.push(...loadFiles(subfiles));
+      } else if (common.fileExt(file) === 'js') {
+        result.push(file);
+      }
+    });
+  return result;
+};
 
 const getConfig = args => {
   let cfg = {};
-  if (args.config && fs.existsSync(args.config)) {
-    cfg = JSON.parse(fs.readFileSync(args.config));
-  } else if (args.config === '') {
-    cfg = JSON.parse(fs.readFileSync('.metadocrc'));
+  if (Array.isArray(args.config)) args.config = args.config.pop();
+  if (args.config !== false) {
+    const configFile = args.config || '.metadocrc';
+    if (fs.existsSync(configFile)) {
+      cfg = JSON.parse(fs.readFileSync(configFile));
+    }
   }
 
   const config = {
     header: args.header || cfg.header || '',
     footer: args.footer || cfg.footer || '',
     removeInterface: args.removeInterface || cfg.removeInterface || false,
-    files: common.merge(args._, cfg.files || []),
+    files: loadFiles(common.merge(args._, cfg.files || [])),
     customLinks: [],
     outputDir: args.outputDir,
     outputFile: args.outputFile,
