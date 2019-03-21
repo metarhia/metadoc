@@ -78,6 +78,10 @@ const noArgumentsFunction = () => 'str';
 
 const noDescriptionFunction = () => {};
 
+//   str <string>
+//   num <number>
+const noTitleFunction = (str, num) => str + num;
+
 // Async functions are supported
 const asyncFunc = async() => {};
 
@@ -164,6 +168,7 @@ module.exports = {
   restFunc,
   typeFunction,
   noArgumentsFunction,
+  noTitleFunction,
   noDescriptionFunction,
   asyncFunc,
   ExampleClass,

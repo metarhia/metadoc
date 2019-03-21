@@ -2,32 +2,33 @@
 
 #### methodName(num, str, arg, flag[, arr[, data]], obj, cb)
 
-- `num`: [`<number>`] argument description
-- `str`: [`<string>`] dash before and comma after types are optional
-- `arg`: [`<Array>`]` | `[`<Date>`]` | `[`<Object>`] argument can have multiple
-      types
-- `flag`: [`<boolean>`] description of argument can have multiple lines, but
-      there should be indentation of 4 spaces after beginning of the first line
-- `arr`: [`<string[]>`][`<string>`] square braces can be added after `type` to
+- `num`: [`<number>`][number] argument description
+- `str`: [`<string>`][string] dash before and comma after types are optional
+- `arg`: [`<Array>`][array]` | `[`<Date>`][date]` | `[`<Object>`][object]
+      argument can have multiple types
+- `flag`: [`<boolean>`][boolean] description of argument can have multiple
+      lines, but there should be indentation of 4 spaces after beginning of the
+      first line
+- `arr`: [`<string[]>`][string] square braces can be added after `type` to
       specify that this is array of `type`s
 - `data`: `<CustomType>` custom type can be specified. e.g. this can be instance
       of some class
-- `obj`: [`<Object>`] its description
-  - `field1`: [`<Object>`] fields of object can be nested but indentation should
-        increase by 2 more spaces for each level
+- `obj`: [`<Object>`][object] its description
+  - `field1`: [`<Object>`][object] fields of object can be nested but
+        indentation should increase by 2 more spaces for each level
     - `field2`: `<any>`
-  - `field3`: [`<symbol>`] comment is optional, but type is obligatory
-- `cb`: [`<Function>`] function description and/or example of usage. e.g.
-      cb(arg1, ...arg2)
-  - `arg1`: [`<Map>`] arguments of function can also be nested using the same
-        rules provided for `Object`
-  - `arg2`: [`<Array>`]
+  - `field3`: [`<symbol>`][symbol] comment is optional, but type is obligatory
+- `cb`: [`<Function>`][function] function description and/or example of usage.
+      e.g. cb(arg1, ...arg2)
+  - `arg1`: [`<Map>`][map] arguments of function can also be nested using the
+        same rules provided for `Object`
+  - `arg2`: [`<Array>`][array]
 
-_Returns:_ [`<Object>`] description of returned value. If this is an object or
-    function with defined structure, then it should be described by rules
-    defined above
-- `numArr`: [`<number[]>`][`<number>`]
-- `strArr`: [`<string[]>`][`<string>`]
+_Returns:_ [`<Object>`][object] description of returned value. If this is an
+    object or function with defined structure, then it should be described by
+    rules defined above
+- `numArr`: [`<number[]>`][number]
+- `strArr`: [`<string[]>`][string]
 
 One-liner function description
 
@@ -36,8 +37,8 @@ length of 80 or less characters
 To specify custom arguments signature `Signature:` comment can be used. It
 also supports multiline
 
-_Throws:_ [`<TypeError>`] conditions causing error. Empty lines between comments
-    after parameters are optional
+_Throws:_ [`<TypeError>`][typeerror] conditions causing error. Empty lines
+    between comments after parameters are optional
 
 _Deprecated:_ should be added if this method was deprecated. Description should
     have reason for deprecation and method to use instead if any. e.g. Removed
@@ -63,40 +64,39 @@ _Result:_
 }
 ```
 
-
 #### restFunc(arg, ...arr)
 
-- `arg`: [`<string>`]
-- `arr`: [`<number[]>`][`<number>`]
+- `arg`: [`<string>`][string]
+- `arr`: [`<number[]>`][number]
 
 Function with rest arguments
 
-
 #### typeFunction(obj, arg1, arg2, arg3)
 
-- `obj`: [`<Object>`]
-  - `field`: [`<number>`]
-- `arg1` comments can contain types like this: [`<string>`]
+- `obj`: [`<Object>`][object]
+  - `field`: [`<number>`][number]
+- `arg1` comments can contain types like this: [`<string>`][string]
 - `arg2`
 - `arg3` arguments do not have to have type or comment
 
-Description can also support types like [`<number>`]
-
+Description can also support types like [`<number>`][number]
 
 #### noArgumentsFunction()
 
-_Returns:_ [`<string>`]
+_Returns:_ [`<string>`][string]
 
 Function with no arguments
 
+#### noTitleFunction(str, num)
+
+- `str`: [`<string>`][string]
+- `num`: [`<number>`][number]
 
 #### noDescriptionFunction()
-
 
 #### async asyncFunc()
 
 Async functions are supported
-
 
 #### ExampleClass()
 
@@ -104,69 +104,61 @@ ExampleClass description
 
 #### ExampleClass.prop1
 
- - [`<string>`] property
+ - [`<string>`][string] property
 
 #### ExampleClass.prop2
 
- - [`<Object>`]
-
+ - [`<Object>`][object]
 
 #### ExampleClass.method2(num)
 
-- `num`: [`<number>`]
+- `num`: [`<number>`][number]
 
 method2 description
 
-
 #### ExampleClass.prototype.constructor(arg1, arg2)
 
-- `arg1`: [`<Object>`]
-- `arg2`: [`<string>`]
+- `arg1`: [`<Object>`][object]
+- `arg2`: [`<string>`][string]
 
 ExampleClass constructor description
 
-
 #### ExampleClass.prototype.method1(arr)
 
-- `arr`: [`<Array>`]
+- `arr`: [`<Array>`][array]
 
 method1 description
-
 
 #### PrototypeClass()
 
 PrototypeClass description and PrototypeClass constructor description
 
-
 #### PrototypeClass.method2(num)
 
-- `num`: [`<number>`]
+- `num`: [`<number>`][number]
 
 method1 description
-
 
 #### PrototypeClass.prototype.constructor(arg1, arg2)
 
-- `arg1`: [`<Object>`]
-- `arg2`: [`<string>`]
+- `arg1`: [`<Object>`][object]
+- `arg2`: [`<string>`][string]
 
 PrototypeClass description and PrototypeClass constructor description
 
-
 #### PrototypeClass.prototype.method1(num)
 
-- `num`: [`<number>`]
+- `num`: [`<number>`][number]
 
 method1 description
 
-
-[`<Object>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-[`<Date>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-[`<Function>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
-[`<Map>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-[`<Array>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-[`<TypeError>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError
-[`<boolean>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type
-[`<number>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type
-[`<string>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
-[`<symbol>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type
+[object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+[date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+[function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+[map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+[array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[typeerror]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError
+[boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
+[symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type
