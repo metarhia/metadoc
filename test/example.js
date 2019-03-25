@@ -2,11 +2,14 @@
 
 /* eslint-disable no-unused-vars */
 
-// One-liner function description
+// One-liner function description.
 // Multi-line expanded function description. Note that all lines should have
-// length of 80 or less characters
+// length of 80 or less characters.
 // To specify custom arguments signature `Signature:` comment can be used. It
-// also supports multiline
+// also supports multiline.
+// Backticks `are supported` and they ``can be used `inside` code blocks``.
+// Note that`text that is not`separated from backtick will stick to it if line
+// exceeds max length.
 // Signature: num, str,
 //     arg,
 //     flag[, arr[, data]], obj,
@@ -31,7 +34,8 @@
 //     arg1 <Map> arguments of function can also be nested using the
 //         same rules provided for `Object`
 //     arg2 <Array>
-// Returns: <Object> description of returned value. If this is
+// Returns: <Object> description
+//     of returned value. If this is
 //     an object or function with defined structure, then it should
 //     be described by rules defined above
 //   numArr <number[]>
@@ -48,8 +52,15 @@
 // Example: methodName(1, '2', {}, false, ['3'], data, {}, fn);
 //
 // Example:
-// methodName(4, '5', {},
-//   false, ['6'], data, {});
+// methodName(
+//   123456789,
+//   'some text',
+//   {},
+//   false,
+//   ['array', 'of', 'strings'],
+//   data,
+//   {}
+// );
 //
 // Result:
 // {
