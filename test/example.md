@@ -5,28 +5,28 @@
 - `num`: [`<number>`][number] argument description
 - `str`: [`<string>`][string] dash before and comma after types are optional
 - `arg`: [`<Array>`][array]|[`<Date>`][date]|[`<Object>`][object] argument can
-      have multiple types
+  have multiple types
 - `flag`: [`<boolean>`][boolean] description of argument can have multiple
-      lines, but there should be indentation of 4 spaces after beginning of the
-      first line
+  lines, but there should be indentation of 4 spaces after beginning of the
+  first line
 - `arr`: [`<string[]>`][string] square braces can be added after `type` to
-      specify that this is array of `type`s
+  specify that this is array of `type`s
 - `data`: `<CustomType>` custom type can be specified. e.g. this can be instance
-      of some class
+  of some class
 - `obj`: [`<Object>`][object] its description
   - `field1`: [`<Object>`][object] fields of object can be nested but
-        indentation should increase by 2 more spaces for each level
+    indentation should increase by 2 more spaces for each level
     - `field2`: `<any>`
   - `field3`: [`<symbol>`][symbol] comment is optional, but type is obligatory
 - `cb`: [`<Function>`][function] function description and/or example of usage.
-      e.g. cb(arg1, ...arg2)
+  e.g. cb(arg1, ...arg2)
   - `arg1`: [`<Map>`][map] arguments of function can also be nested using the
-        same rules provided for `Object`
+    same rules provided for `Object`
   - `arg2`: [`<Array>`][array]
 
 _Returns:_ [`<Object>`][object] description of returned value. If this is an
-    object or function with defined structure, then it should be described by
-    rules defined above
+object or function with defined structure, then it should be described by rules
+defined above
 
 - `numArr`: [`<number[]>`][number]
 - `strArr`: [`<string[]>`][string]
@@ -41,12 +41,12 @@ that`text that is not`separated from backtick will stick to it if line exceeds
 max length.
 
 _Throws:_ [`<TypeError>`][typeerror] conditions causing error. Empty lines
-    between comments after parameters are optional
+between comments after parameters are optional
 
 _Deprecated:_ should be added if this method was deprecated. Description should
-    have reason for deprecation and method to use instead if any. e.g. Removed
-    due to incompatibility with `moduleName` in version 2.0.0. Use
-    `newMethodName` instead.
+have reason for deprecation and method to use instead if any. e.g. Removed due
+to incompatibility with `moduleName` in version 2.0.0. Use `newMethodName`
+instead.
 
 _Example:_
 
