@@ -83,7 +83,7 @@ const noDescriptionFunction = () => {};
 const noTitleFunction = (str, num) => str + num;
 
 // Async functions are supported
-const asyncFunc = async() => {};
+const asyncFunc = async () => {};
 
 // ExampleClass description
 // Properties:
