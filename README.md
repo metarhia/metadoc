@@ -32,46 +32,45 @@ Options:
 
 #### introspect(namespace, text)
 
-- `namespace`: [`<Map>`] hash of interfaces
-- `text`: [`<string>`] data to parse
+- `namespace`: [`<Map>`][map] hash of interfaces
+- `text`: [`<string>`][string] data to parse
 
-_Returns:_ [`<Map>`] hash of hash of records, `{ title, description, parameters,
-    comments }`
+_Returns:_ [`<Map>`][map] hash of hash of records,
+`{ title, description, parameters, comments }`
 
 Introspect interface
 
-
 #### parseSignature(fn, text, start)
 
-- `fn`: [`<Function>`]` | `[`<RegExp>`] to be searched
-- `text`: [`<string>`] to be searched in
-- `start`: [`<number>`] position to start searching from
+- `fn`: [`<Function>`][function]|[`<RegExp>`][regexp] to be searched
+- `text`: [`<string>`][string] to be searched in
+- `start`: [`<number>`][number] position to start searching from
 
-_Returns:_ [`<Object>`] function signature
-- `title`: [`<string>`] short function description
-- `description`: [`<string>`] extended function description
-- `parameters`: [`<Object[]>`][`<Object>`] function parameters, `{ name, types,
-      nonStandardTypes, comment, offset }`
-- `comments`: [`<Object[]>`][`<Object>`] comments about returned value, thrown
-      errors, deprecation and usage, `{ name, types, nonStandardTypes, comment
-      }`
+_Returns:_ [`<Object>`][object] function signature
+
+- `title`: [`<string>`][string] short function description
+- `description`: [`<string>`][string] extended function description
+- `argsSignature`: [`<string>`][string] custom function signature
+- `parameters`: [`<Object[]>`][object] function parameters,
+  `{ name, types, nonStandardTypes, comment, offset }`
+- `comments`: [`<Object[]>`][object] comments about returned value, thrown
+  errors, deprecation and usage, `{ name, types, nonStandardTypes, comment }`
 
 Parse function signature
 
-
 #### generateMd(inventory, options)
 
-- `inventory`: [`<Map>`] hash of map of records, `{ method, title, parameters }`
-- `options`: [`<Object>`]
-  - `header`: [`<string>`] text before api documentation
-  - `footer`: [`<string>`] text after api documentation
-  - `customTypes`: [`<string[]>`][`<string>`] custom types
-  - `customLinks`: [`<Array[]>`][`<Array>`] custom types links
+- `inventory`: [`<Map>`][map] hash of map of records,
+  `{ method, title, parameters }`
+- `options`: [`<Object>`][object]
+  - `header`: [`<string>`][string] text before api documentation
+  - `footer`: [`<string>`][string] text after api documentation
+  - `customTypes`: [`<string[]>`][string] custom types
+  - `customLinks`: [`<Array[]>`][array] custom types links
 
-_Returns:_ [`<string>`] md document
+_Returns:_ [`<string>`][string] md document
 
 Generate md from interfaces inventory
-
 
 ## Contributors
 
@@ -81,11 +80,10 @@ See GitHub for a full [list of contributors](https://github.com/metarhia/metadoc
 
 Licesed under MIT license. Copyright (c) 2018 Metarhia contributors
 
-
-[`<Object>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-[`<Function>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
-[`<RegExp>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
-[`<Map>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-[`<Array>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-[`<number>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type
-[`<string>`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
+[object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+[function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+[map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+[array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
