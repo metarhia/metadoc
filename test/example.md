@@ -135,7 +135,7 @@ callAsyncFunction((a, b) => {
 })
 ```
 
-#### ExampleClass(arg1, arg2)
+#### class ExampleClass
 
 ExampleClass description
 
@@ -166,7 +166,7 @@ ExampleClass constructor description
 
 method1 description
 
-#### PrototypeClass()
+#### class PrototypeClass
 
 PrototypeClass description and PrototypeClass constructor description
 
