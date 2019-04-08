@@ -111,7 +111,31 @@ Function with no arguments
 
 Async functions are supported
 
-#### ExampleClass()
+#### undocumentedArgumentFunction(arg1, arg2, ...args)
+
+#### undocumentedDestructureFn(arg1, { a, b = 3, c = 'hello, world' })
+
+#### undocumentedDefaultFn(arg1, arg2 = 'hello, world')
+
+#### callAsyncFunction(fn)
+
+- `fn`: [`<Function>`][function]
+  - `a`: [`<boolean>`][boolean]
+  - `b`: [`<string>`][string]
+
+Call async function
+
+_Example:_
+
+```js
+callAsyncFunction((a, b) => {
+  if (a) {
+    console.log(b);
+  }
+})
+```
+
+#### ExampleClass(arg1, arg2)
 
 ExampleClass description
 

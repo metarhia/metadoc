@@ -96,6 +96,28 @@ const noTitleFunction = (str, num) => str + num;
 // Async functions are supported
 const asyncFunc = async () => {};
 
+const undocumentedArgumentFunction = (arg1, arg2, ...args) => {};
+
+const undocumentedDestructureFn = (
+  arg1,
+  { a, b = 3, c = 'hello, world' }
+) => {};
+
+const undocumentedDefaultFn = (arg1, arg2 = 'hello, world') => {};
+
+// Call async function
+//   fn <Function>
+//     a <boolean>
+//     b <string>
+// Example:
+// callAsyncFunction((a, b) => {
+//   if (a) {
+//     console.log(b);
+//   }
+// })
+const callAsyncFunction = fn =>
+  process.nextTick(() => fn(!!Math.floor(Math.random() * 2), 'Yay!'));
+
 // ExampleClass description
 // Properties:
 //   prop1 <string> property
@@ -179,6 +201,10 @@ module.exports = {
   noTitleFunction,
   noDescriptionFunction,
   asyncFunc,
+  undocumentedArgumentFunction,
+  undocumentedDestructureFn,
+  undocumentedDefaultFn,
+  callAsyncFunction,
   ExampleClass,
   PrototypeClass,
 };
