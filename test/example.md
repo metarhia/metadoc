@@ -74,7 +74,7 @@ _Result:_
 {
   numArr: [4, 5, 6],
   strArr: ['4', '5', '6'],
-}
+};
 ```
 
 #### restFunc(arg, ...arr)
@@ -132,7 +132,7 @@ callAsyncFunction((a, b) => {
   if (a) {
     console.log(b);
   }
-})
+});
 ```
 
 #### class ExampleClass
