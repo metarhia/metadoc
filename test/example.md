@@ -151,6 +151,9 @@ ExampleClass description
 
 - `num`: [`<number>`][number]
 
+_Returns:_ [`<number>`][number] undescore and asterisk should be escaped: num \*
+num
+
 method2 description
 
 #### ExampleClass.prototype.constructor(arg1, arg2)
@@ -165,6 +168,13 @@ ExampleClass constructor description
 - `arr`: [`<Array>`][array]
 
 method1 description
+
+#### ExampleClass.prototype.\_method3(str, \_num)
+
+- `str`: [`<string>`][string]
+- `_num`: [`<number>`][number]
+
+method3 description
 
 #### class PrototypeClass
 

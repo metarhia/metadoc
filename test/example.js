@@ -137,7 +137,15 @@ class ExampleClass {
 
   // method2 description
   //   num <number>
-  static method2(num) {}
+  // Returns: <number> undescore and asterisk should be escaped: num \* num
+  static method2(num) {
+    return num * num;
+  }
+
+  // method3 description
+  //   str <string>
+  //   _num <number>
+  _method3(str, _num) {}
 }
 
 // PrototypeClass description and PrototypeClass constructor description
