@@ -1,6 +1,6 @@
-### Interface: example
+# Interface: example
 
-#### methodName(num, str, arg, flag[, arr[, data]], obj, cb)
+## methodName(num, str, arg, flag\[, arr\[, data\]\], obj, cb)
 
 - `num`: [`<number>`][number] argument description
 - `str`: [`<string>`][string] dash before and comma after types are optional
@@ -77,14 +77,14 @@ _Result:_
 };
 ```
 
-#### restFunc(arg, ...arr)
+## restFunc(arg, ...arr)
 
 - `arg`: [`<string>`][string]
 - `arr`: [`<number[]>`][number]
 
 Function with rest arguments
 
-#### typeFunction(obj, arg1, arg2, arg3)
+## typeFunction(obj, arg1, arg2, arg3)
 
 - `obj`: [`<Object>`][object]
   - `field`: [`<number>`][number]
@@ -94,30 +94,30 @@ Function with rest arguments
 
 Description can also support types like [`<number>`][number]
 
-#### noArgumentsFunction()
+## noArgumentsFunction()
 
 _Returns:_ [`<string>`][string]
 
 Function with no arguments
 
-#### noTitleFunction(str, num)
+## noTitleFunction(str, num)
 
 - `str`: [`<string>`][string]
 - `num`: [`<number>`][number]
 
-#### noDescriptionFunction()
+## noDescriptionFunction()
 
-#### async asyncFunc()
+## async asyncFunc()
 
 Async functions are supported
 
-#### undocumentedArgumentFunction(arg1, arg2, ...args)
+## undocumentedArgumentFunction(arg1, arg2, ...args)
 
-#### undocumentedDestructureFn(arg1, { a, b = 3, c = 'hello, world' })
+## undocumentedDestructureFn(arg1, { a, b = 3, c = 'hello, world' })
 
-#### undocumentedDefaultFn(arg1, arg2 = 'hello, world')
+## undocumentedDefaultFn(arg1, arg2 = 'hello, world')
 
-#### callAsyncFunction(fn)
+## callAsyncFunction(fn)
 
 - `fn`: [`<Function>`][function]
   - `a`: [`<boolean>`][boolean]
@@ -135,19 +135,19 @@ callAsyncFunction((a, b) => {
 });
 ```
 
-#### class ExampleClass
+## class ExampleClass
 
 ExampleClass description
 
-#### ExampleClass.prop1
+### ExampleClass.prop1
 
 - [`<string>`][string] property
 
-#### ExampleClass.prop2
+### ExampleClass.prop2
 
 - [`<Object>`][object]
 
-#### ExampleClass.method2(num)
+### ExampleClass.method2(num)
 
 - `num`: [`<number>`][number]
 
@@ -156,44 +156,44 @@ num
 
 method2 description
 
-#### ExampleClass.prototype.constructor(arg1, arg2)
+### ExampleClass.prototype.constructor(arg1, arg2)
 
 - `arg1`: [`<Object>`][object]
 - `arg2`: [`<string>`][string]
 
 ExampleClass constructor description
 
-#### ExampleClass.prototype.method1(arr)
+### ExampleClass.prototype.method1(arr)
 
 - `arr`: [`<Array>`][array]
 
 method1 description
 
-#### ExampleClass.prototype.\_method3(str, \_num)
+### ExampleClass.prototype.\_method3(str, \_num)
 
 - `str`: [`<string>`][string]
 - `_num`: [`<number>`][number]
 
 method3 description
 
-#### class PrototypeClass
+## class PrototypeClass
 
 PrototypeClass description and PrototypeClass constructor description
 
-#### PrototypeClass.method2(num)
+### PrototypeClass.method2(num)
 
 - `num`: [`<number>`][number]
 
 method1 description
 
-#### PrototypeClass.prototype.constructor(arg1, arg2)
+### PrototypeClass.prototype.constructor(arg1, arg2)
 
 - `arg1`: [`<Object>`][object]
 - `arg2`: [`<string>`][string]
 
 PrototypeClass description and PrototypeClass constructor description
 
-#### PrototypeClass.prototype.method1(num)
+### PrototypeClass.prototype.method1(num)
 
 - `num`: [`<number>`][number]
 
