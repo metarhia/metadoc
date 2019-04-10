@@ -30,6 +30,10 @@ const args = yargs
     type: 'boolean',
     describe: 'do not add interface header',
   })
+  .option('min-header-level', {
+    type: 'number',
+    describe: 'minimal header level',
+  })
   .option('write-to-stdout', {
     alias: 'o',
     type: 'boolean',
@@ -94,6 +98,7 @@ const getConfig = args => {
     header: args.header || cfg.header || '',
     footer: args.footer || cfg.footer || '',
     removeInterface: args.removeInterface || cfg.removeInterface || false,
+    minHeaderLevel: args.minHeaderLevel || cfg.minHeaderLevel || 1,
     files: loadFiles(common.merge(args._, cfg.files || [])),
     customLinks: [],
     outputDir: args.outputDir,
