@@ -122,6 +122,8 @@ const callAsyncFunction = fn =>
 // Properties:
 //   prop1 <string> property
 //   prop2 <Object>
+//   getProp1 <string> getter for `prop1`
+//   setProp1 <string> setter for `prop1`
 class ExampleClass {
   // ExampleClass constructor description
   //   arg1 <Object>
@@ -146,6 +148,14 @@ class ExampleClass {
   //   str <string>
   //   _num <number>
   _method3(str, _num) {}
+
+  get getProp1() {
+    return this.prop1;
+  }
+
+  set setProp1(val) {
+    this.prop1 = val;
+  }
 }
 
 // PrototypeClass description and PrototypeClass constructor description
