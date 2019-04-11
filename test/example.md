@@ -139,19 +139,19 @@ callAsyncFunction((a, b) => {
 
 ExampleClass description
 
-### ExampleClass.prop1
+### ExampleClass.prototype.prop1
 
 - [`<string>`][string] property
 
-### ExampleClass.prop2
+### ExampleClass.prototype.prop2
 
 - [`<Object>`][object]
 
-### ExampleClass.getProp1
+### ExampleClass.prototype.getProp1
 
 - [`<string>`][string] getter for `prop1`
 
-### ExampleClass.setProp1
+### ExampleClass.prototype.setProp1
 
 - [`<string>`][string] setter for `prop1`
 
