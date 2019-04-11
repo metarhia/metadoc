@@ -146,6 +146,18 @@ class ExampleClass {
   //   str <string>
   //   _num <number>
   _method3(str, _num) {}
+
+  // Get `this.prop1`
+  // Returns: <string>
+  get getProp1() {
+    return this.prop1;
+  }
+
+  // Set `this.prop1`
+  //   val <string>
+  set setProp1(val) {
+    this.prop1 = val;
+  }
 }
 
 // PrototypeClass description and PrototypeClass constructor description

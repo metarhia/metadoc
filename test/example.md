@@ -176,6 +176,18 @@ method1 description
 
 method3 description
 
+### get ExampleClass.prototype.getProp1()
+
+_Returns:_ [`<string>`][string]
+
+Get `this.prop1`
+
+### set ExampleClass.prototype.setProp1(val)
+
+- `val`: [`<string>`][string]
+
+Set `this.prop1`
+
 ## class PrototypeClass
 
 PrototypeClass description and PrototypeClass constructor description
