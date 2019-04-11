@@ -147,6 +147,14 @@ ExampleClass description
 
 - [`<Object>`][object]
 
+### ExampleClass.getProp1
+
+- [`<string>`][string] getter for `prop1`
+
+### ExampleClass.setProp1
+
+- [`<string>`][string] setter for `prop1`
+
 ### ExampleClass.method2(num)
 
 - `num`: [`<number>`][number]
@@ -175,18 +183,6 @@ method1 description
 - `_num`: [`<number>`][number]
 
 method3 description
-
-### get ExampleClass.prototype.getProp1()
-
-_Returns:_ [`<string>`][string]
-
-Get `this.prop1`
-
-### set ExampleClass.prototype.setProp1(val)
-
-- `val`: [`<string>`][string]
-
-Set `this.prop1`
 
 ## class PrototypeClass
 
