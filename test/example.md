@@ -176,6 +176,16 @@ method1 description
 
 method3 description
 
+## class AnotherClass extends ExampleClass
+
+### AnotherClass.prototype.constructor(data)
+
+### AnotherClass.prototype.method4(data)
+
+- `data`: [`<string>`][string]
+
+method4 description
+
 ## class PrototypeClass
 
 PrototypeClass description and PrototypeClass constructor description
