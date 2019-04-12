@@ -158,6 +158,14 @@ class ExampleClass {
   }
 }
 
+class AnotherClass extends ExampleClass {
+  // method4 description
+  //   data <string>
+  method4(data) {
+    this.data = data;
+  }
+}
+
 // PrototypeClass description and PrototypeClass constructor description
 //   arg1 <Object>
 //   arg2 <string>
@@ -224,5 +232,6 @@ module.exports = {
   undocumentedDefaultFn,
   callAsyncFunction,
   ExampleClass,
+  AnotherClass,
   PrototypeClass,
 };
