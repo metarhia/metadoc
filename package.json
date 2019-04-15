@@ -1,6 +1,6 @@
 {
   "name": "@metarhia/doc",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
   "description": "Metarhia Documentation Generator",
   "license": "MIT",
@@ -37,12 +37,12 @@
     "eslint": "^5.16.0",
     "eslint-config-metarhia": "^7.0.0",
     "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.17.1",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "1.16.x"
+    "prettier": "1.17.x"
   },
   "dependencies": {
-    "@metarhia/common": "^1.4.2",
+    "@metarhia/common": "^1.5.0",
     "yargs": "^12.0.5"
   }
 }
