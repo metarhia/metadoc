@@ -18,6 +18,11 @@
     indentation should increase by 2 more spaces for each level
     - `field2`: `<any>`
   - `field3`: [`<symbol>`][symbol] comment is optional, but type is obligatory
+  - `field4`: [ [`<Error>`][error], `<any>`, [`<Error>`][error], `<any>` ]
+  - `field5`: [ `<any>`, [`<Error>`][error], `<any>`, [`<Error>`][error] ]
+  - `field6`: [ `<any>`, [`<Error>`][error], [`<Error>`][error], `<any>` ]
+  - `field7`: [ [`<Error>`][error], `<any>`, `<any>`, [`<Error>`][error] ]
+  - `field8`: [ `<any>`, [ [`<Error>`][error], `<any>` ], [`<Error>`][error] ]
 - `cb`: [`<Function>`][function] function description and/or example of usage.
   e.g. cb(arg1, ...arg2)
   - `arg1`: [`<Map>`][map] arguments of function can also be nested using the
@@ -222,6 +227,7 @@ method1 description
 [function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 [map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
 [array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 [typeerror]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError
 [boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type
 [number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type
