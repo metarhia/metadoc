@@ -34,6 +34,30 @@ const args = yargs
     type: 'number',
     describe: 'minimal header level',
   })
+  .option('interface-level', {
+    type: 'number',
+    describe: 'Set interface header level',
+  })
+  .option('function-level', {
+    type: 'number',
+    describe: 'Set top-level functions header level',
+  })
+  .option('class-level', {
+    type: 'number',
+    describe: 'Set class header level',
+  })
+  .option('method-level', {
+    type: 'number',
+    describe: 'Set class methods header level',
+  })
+  .option('static-method-level', {
+    type: 'number',
+    describe: 'Set class static methods header level',
+  })
+  .option('property-level', {
+    type: 'number',
+    describe: 'Set properties header level',
+  })
   .option('write-to-stdout', {
     alias: 'o',
     type: 'boolean',
@@ -84,6 +108,19 @@ const loadFiles = files => {
   return result;
 };
 
+const select = (...args) => args.find(a => a !== undefined);
+
+const mergeConfigs = (args, cfg, defaultCfg) => {
+  const result = {};
+  Object.entries(defaultCfg).forEach(
+    ([key, defaultVal]) =>
+      (result[key] = Array.isArray(defaultVal)
+        ? common.merge(args[key] || [], cfg.files || [], defaultVal)
+        : select(args[key], cfg[key], defaultVal))
+  );
+  return result;
+};
+
 const getConfig = args => {
   let cfg = {};
   if (Array.isArray(args.config)) args.config = args.config.pop();
@@ -94,12 +131,23 @@ const getConfig = args => {
     }
   }
 
+  const level = args.minHeaderLevel || cfg.minHeaderLevel || 1;
+  const defaultConfig = {
+    header: '',
+    footer: '',
+    files: [],
+    removeInterface: false,
+    interfaceLevel: level,
+    functionLevel: level + 1,
+    classLevel: level + 1,
+    methodLevel: level + 2,
+    staticMethodLevel: level + 2,
+    propertyLevel: level + 2,
+  };
+
+  args.files = args._;
   const config = {
-    header: args.header || cfg.header || '',
-    footer: args.footer || cfg.footer || '',
-    removeInterface: args.removeInterface || cfg.removeInterface || false,
-    minHeaderLevel: args.minHeaderLevel || cfg.minHeaderLevel || 1,
-    files: loadFiles(common.merge(args._, cfg.files || [])),
+    ...mergeConfigs(args, cfg, defaultConfig),
     customLinks: [],
     outputDir: args.outputDir,
     outputFile: args.outputFile,
@@ -115,13 +163,11 @@ const getConfig = args => {
     config.footer += fs.readFileSync(footerFile, 'utf8');
   }
 
-  config.files = config.files.map(file => path.resolve(file));
+  config.files = loadFiles(config.files).map(file => path.resolve(file));
 
   if (cfg.customLinks) {
-    config.customTypes = Object.getOwnPropertyNames(cfg.customLinks);
-    for (const type in cfg.customLinks) {
-      config.customLinks.push([type, cfg.customLinks[type]]);
-    }
+    config.customTypes = Object.keys(cfg.customLinks);
+    config.customLinks = Object.entries(cfg.customLinks);
   }
 
   if (args.outputFile || args.outputDir) {
