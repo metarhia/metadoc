@@ -33,6 +33,7 @@
 //     field5 [<any>, <Error>, <any>, <Error>]
 //     field6 [<any>, <Error>, <Error>, <any>]
 //     field7 [<Error>, <any>, <any>, <Error>]
+//     field8 [<any>, [<Error>, <any>], <Error>]
 //   cb <Function> function description and/or example of
 //       usage. e.g. cb(arg1, ...arg2)
 //     arg1 <Map> arguments of function can also be nested using the
