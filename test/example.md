@@ -18,10 +18,10 @@
     indentation should increase by 2 more spaces for each level
     - `field2`: `<any>`
   - `field3`: [`<symbol>`][symbol] comment is optional, but type is obligatory
-  - `field4`: `[`[`<Error>`][error]`, <any>,`[`<Error>`][error]`, <any>]`
-  - `field5`: `[<any>,`[`<Error>`][error]`, <any>,`[`<Error>`][error]`]`
-  - `field6`: `[<any>,`[`<Error>`][error]`,`[`<Error>`][error]`, <any>]`
-  - `field7`: `[`[`<Error>`][error]`, <any>, <any>,`[`<Error>`][error]`]`
+  - `field4`: [ [`<Error>`][error], `<any>`, [`<Error>`][error], `<any>` ]
+  - `field5`: [ `<any>`, [`<Error>`][error], `<any>`, [`<Error>`][error] ]
+  - `field6`: [ `<any>`, [`<Error>`][error], [`<Error>`][error], `<any>` ]
+  - `field7`: [ [`<Error>`][error], `<any>`, `<any>`, [`<Error>`][error] ]
 - `cb`: [`<Function>`][function] function description and/or example of usage.
   e.g. cb(arg1, ...arg2)
   - `arg1`: [`<Map>`][map] arguments of function can also be nested using the
