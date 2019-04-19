@@ -176,6 +176,7 @@ if (config.outputDir) {
 } else {
   const md = doc.generateMd(inventory, config);
   output.set(config.outputFile, md);
+  config.outputDir = path.dirname(config.outputFile);
 }
 
 if (config.writeToStdout) {
@@ -187,8 +188,14 @@ if (config.writeToStdout) {
   }
 } else {
   console.log('Writting output to following files...');
-  for (const [file, data] of output) {
-    fs.writeFileSync(file, data);
-    console.log(file);
-  }
+  common.mkdirp(config.outputDir, err => {
+    if (err) {
+      console.error('Cannot create output directory', err);
+      return;
+    }
+    for (const [file, data] of output) {
+      fs.writeFileSync(file, data);
+      console.log(file);
+    }
+  });
 }
