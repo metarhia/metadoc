@@ -108,12 +108,7 @@ const loadFiles = files => {
   return result;
 };
 
-const select = (...args) => {
-  for (const arg of args) {
-    if (arg !== undefined) return arg;
-  }
-  return undefined;
-};
+const select = (...args) => args.find(a => a !== undefined);
 
 const mergeConfigs = (args, cfg, defaultCfg) => {
   const result = {};
