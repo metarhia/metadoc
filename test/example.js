@@ -87,14 +87,32 @@ const typeFunction = (obj, arg1, arg2, arg3) => {};
 // Returns: <string>
 const noArgumentsFunction = () => 'str';
 
-const noDescriptionFunction = () => {};
-
 //   str <string>
 //   num <number>
 const noTitleFunction = (str, num) => str + num;
 
+const noDescriptionFunction = () => {};
+
+const oneArgumentLambda = a => (a + 2) ** 2;
+
+const oneArgumentLambda2 = a => {
+  console.log('a: ', a);
+};
+
+const oneArgumentAsyncLambda = async a => (a + 2) ** 2;
+
+const oneArgumentAsyncLambda2 = async a => {
+  console.log('a: ', a);
+};
+
+const asyncLambda = async () => {};
+
 // Async functions are supported
-const asyncFunc = async () => {};
+const asyncFunc = async function() {};
+
+const asyncFunc2 = async function(a) {
+  console.log(a);
+};
 
 const undocumentedArgumentFunction = (arg1, arg2, ...args) => {};
 
@@ -223,13 +241,23 @@ module.exports = {
   methodName,
   restFunc,
   typeFunction,
+
   noArgumentsFunction,
   noTitleFunction,
   noDescriptionFunction,
+
+  oneArgumentLambda,
+  oneArgumentLambda2,
+  oneArgumentAsyncLambda,
+  oneArgumentAsyncLambda2,
+  asyncLambda,
   asyncFunc,
+  asyncFunc2,
+
   undocumentedArgumentFunction,
   undocumentedDestructureFn,
   undocumentedDefaultFn,
+
   callAsyncFunction,
   ExampleClass,
   AnotherClass,
