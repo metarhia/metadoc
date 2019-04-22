@@ -112,9 +112,21 @@ Function with no arguments
 
 ## noDescriptionFunction()
 
+## oneArgumentLambda(a)
+
+## oneArgumentLambda2(a)
+
+## async oneArgumentAsyncLambda(a)
+
+## async oneArgumentAsyncLambda2(a)
+
+## async asyncLambda()
+
 ## async asyncFunc()
 
 Async functions are supported
+
+## async asyncFunc2(a)
 
 ## undocumentedArgumentFunction(arg1, arg2, ...args)
 
