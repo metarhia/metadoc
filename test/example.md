@@ -134,6 +134,17 @@ Async functions are supported
 
 ## undocumentedDefaultFn(arg1, arg2 = 'hello, world')
 
+## linksExample(link)
+
+- `link`: [`<string>`][string] links can be also used across all comments and
+  links names can have parentheses at the end like
+  [`introspect()`][introspect()].
+
+Example of links usage
+
+To create a link the following format should be used: `metadoc`. Links can have
+whitespace characters.
+
 ## callAsyncFunction(fn)
 
 - `fn`: [`<Function>`][function]
@@ -234,6 +245,7 @@ PrototypeClass description and PrototypeClass constructor description
 
 method1 description
 
+[introspect()]: https://github.com/metarhia/metadoc#introspectnamespace-text
 [object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 [function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function

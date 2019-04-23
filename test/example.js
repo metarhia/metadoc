@@ -128,6 +128,13 @@ const undocumentedDestructureFn = (
 
 const undocumentedDefaultFn = (arg1, arg2 = 'hello, world') => {};
 
+// Example of links usage
+// To create a link the following format should be used: `{metadoc}`.
+// Links can have whitespace characters.
+//   link <string> links can be also used across all comments and links names
+//       can have parentheses at the end like `{introspect()}`.
+const linksExample = link => console.log('Link:', link);
+
 // Call async function
 //   fn <Function>
 //     a <boolean>
@@ -262,7 +269,7 @@ module.exports = {
   undocumentedArgumentFunction,
   undocumentedDestructureFn,
   undocumentedDefaultFn,
-
+  linksExample,
   callAsyncFunction,
   ExampleClass,
   AnotherClass,
