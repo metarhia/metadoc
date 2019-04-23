@@ -1,0 +1,8 @@
+{
+  "files": ["test/example.js"],
+  "customLinks": {
+    "meta doc": "https://github.com/metarhia/metadoc",
+    "introspect()": "https://github.com/metarhia/metadoc#introspectnamespace-text"
+  },
+  "outputDir": "test/"
+}
