@@ -82,7 +82,11 @@ _Result:_
 };
 ```
 
+## restFunc()
+
 ## restFunc(arg, ...arr)
+
+## restFunc(arg, arr)
 
 - `arg`: [`<string>`][string]
 - `arr`: [`<number[]>`][number]
