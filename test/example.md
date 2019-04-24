@@ -142,8 +142,8 @@ Async functions are supported
 
 Example of links usage
 
-To create a link the following format should be used: `metadoc`. Links can have
-whitespace characters.
+To create a link the following format should be used: [`meta doc`][meta doc].
+Links can have whitespace characters.
 
 ## callAsyncFunction(fn)
 
@@ -245,6 +245,7 @@ PrototypeClass description and PrototypeClass constructor description
 
 method1 description
 
+[meta doc]: https://github.com/metarhia/metadoc
 [introspect()]: https://github.com/metarhia/metadoc#introspectnamespace-text
 [object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
