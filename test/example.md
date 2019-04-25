@@ -218,6 +218,10 @@ method3 description
 
 ## class AnotherClass extends ExampleClass
 
+### AnotherClass.prototype.prop
+
+- [`<string>`][string]
+
 ### AnotherClass.prototype.constructor(data)
 
 ### AnotherClass.prototype.method4(data)

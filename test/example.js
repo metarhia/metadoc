@@ -190,6 +190,8 @@ class ExampleClass {
   }
 }
 
+// Properties:
+//   prop <string>
 class AnotherClass extends ExampleClass {
   // method4 description
   //   data <string>
