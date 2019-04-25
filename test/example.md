@@ -171,6 +171,10 @@ callAsyncFunction((a, b) => {
 
 ExampleClass description
 
+### ExampleClass.staticProp
+
+- [`<string>`][string] static property
+
 ### ExampleClass.prototype.prop1
 
 - [`<string>`][string] property

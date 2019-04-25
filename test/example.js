@@ -151,6 +151,8 @@ const callAsyncFunction = fn =>
   process.nextTick(() => fn(!!Math.floor(Math.random() * 2), 'Yay!'));
 
 // ExampleClass description
+// Static properties:
+//   staticProp <string> static property
 // Properties:
 //   prop1 <string> property
 //   prop2 <Object>
