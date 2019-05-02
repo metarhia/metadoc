@@ -167,7 +167,7 @@ callAsyncFunction((a, b) => {
 });
 ```
 
-## functionWithFunction(fn, Returns:, number)
+## functionWithFunction(fn, number)
 
 - `fn`: [`<Function>`][function] function description
   - `num`: [`<number>`][number] `fn` parameter
