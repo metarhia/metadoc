@@ -150,6 +150,14 @@ const linksExample = link => console.log('Link:', link);
 const callAsyncFunction = fn =>
   process.nextTick(() => fn(!!Math.floor(Math.random() * 2), 'Yay!'));
 
+// Function with function
+//   fn <Function> function description
+//     num <number> `fn` parameter
+//   Returns: <number>
+//   number <number>
+// Returns: <number> result of `fn` execution
+const functionWithFunction = (fn, number) => fn(Math.random() * number);
+
 // ExampleClass description
 // Static properties:
 //   staticProp <string> static property
@@ -277,6 +285,8 @@ module.exports = {
   undocumentedDefaultFn,
   linksExample,
   callAsyncFunction,
+  functionWithFunction,
+
   ExampleClass,
   AnotherClass,
   PrototypeClass,

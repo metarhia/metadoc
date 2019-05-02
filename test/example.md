@@ -167,6 +167,17 @@ callAsyncFunction((a, b) => {
 });
 ```
 
+## functionWithFunction(fn, Returns:, number)
+
+- `fn`: [`<Function>`][function] function description
+  - `num`: [`<number>`][number] `fn` parameter
+- _Returns:_ [`<number>`][number]
+- `number`: [`<number>`][number]
+
+_Returns:_ [`<number>`][number] result of `fn` execution
+
+Function with function
+
 ## class ExampleClass
 
 ExampleClass description
