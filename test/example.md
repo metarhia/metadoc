@@ -147,7 +147,8 @@ Async functions are supported
 Example of links usage
 
 To create a link the following format should be used: [`meta doc`][meta doc].
-Links can have whitespace characters.
+Links can have whitespace characters. And you still can use braces inside
+backticks to, for example, specify object `{ a: 1, b: 2 }`.
 
 ## callAsyncFunction(fn)
 
