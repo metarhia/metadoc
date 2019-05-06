@@ -133,7 +133,8 @@ const undocumentedDefaultFn = (arg1, arg2 = 'hello, world') => {};
 
 // Example of links usage
 // To create a link the following format should be used: `{meta doc}`.
-// Links can have whitespace characters.
+// Links can have whitespace characters. And you still can use braces inside
+// backticks to, for example, specify object `{ a: 1, b: 2 }`.
 //   link <string> links can be also used across all comments and links names
 //       can have parentheses at the end like `{introspect()}`.
 const linksExample = link => console.log('Link:', link);
