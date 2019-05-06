@@ -115,6 +115,7 @@ const oneArgumentAsyncLambda2 = async a => {
 const asyncLambda = async () => {};
 
 // Async functions are supported
+// Returns: <Promise>
 const asyncFunc = async function() {};
 
 const asyncFunc2 = async function(a) {
