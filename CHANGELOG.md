@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+## [0.5.3][] - 2019-05-07
+
 ### Added
 
 - Support for parameter function `Returns:` comment.
@@ -147,7 +149,8 @@ and this project adheres to
 
 - The first implementation of the package.
 
-[unreleased]: https://github.com/metarhia/metadoc/compare/v0.5.2...HEAD
+[unreleased]: https://github.com/metarhia/metadoc/compare/v0.5.3...HEAD
+[0.5.3]: https://github.com/metarhia/metadoc/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/metarhia/metadoc/compare/v0.5.1...v0.5.2
 [0.5.1]: https://github.com/metarhia/metadoc/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/metarhia/metadoc/compare/v0.4.1...v0.5.0
