@@ -10,19 +10,19 @@ and this project adheres to
 
 ### Added
 
-- Support for parameter function `Returns:` comment
-- Support for `Promise` type
+- Support for parameter function `Returns:` comment.
+- Support for `Promise` type.
 - This CHANGELOG.md file.
 
 ### Fixed
 
-- Custom embedded comments links
+- Custom embedded comments links.
 
 ## [0.5.2][] - 2019-04-26
 
 ### Added
 
-- Support for static properties
+- Support for static properties.
 - Support for multiple signatures.
 
 ### Fixed
