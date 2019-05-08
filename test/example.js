@@ -274,14 +274,18 @@ module.exports = {
   noTitleFunction,
   noDescriptionFunction,
 
-  lambda: {
-    oneArgumentLambda,
-    oneArgumentLambda2,
-    oneArgumentAsyncLambda,
-    oneArgumentAsyncLambda2,
-    asyncLambda,
-    asyncFunc,
-    asyncFunc2,
+  lambdas: {
+    oneArgumentNested: {
+      oneArgumentLambda,
+      oneArgumentLambda2,
+      oneArgumentAsyncLambda,
+      oneArgumentAsyncLambda2,
+    },
+    asyncNestedFunctions: {
+      asyncLambda,
+      asyncFunc,
+      asyncFunc2,
+    },
   },
 
   undocumentedArgumentFunction,
