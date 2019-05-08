@@ -116,23 +116,23 @@ Function with no arguments
 
 ## noDescriptionFunction()
 
-## oneArgumentLambda(a)
+## lambdas.oneArgumentNested.oneArgumentLambda(a)
 
-## oneArgumentLambda2(a)
+## lambdas.oneArgumentNested.oneArgumentLambda2(a)
 
-## async oneArgumentAsyncLambda(a)
+## async lambdas.oneArgumentNested.oneArgumentAsyncLambda(a)
 
-## async oneArgumentAsyncLambda2(a)
+## async lambdas.oneArgumentNested.oneArgumentAsyncLambda2(a)
 
-## async asyncLambda()
+## async lambdas.asyncNestedFunctions.asyncLambda()
 
-## async asyncFunc()
+## async lambdas.asyncNestedFunctions.asyncFunc()
 
 _Returns:_ [`<Promise>`][promise]
 
 Async functions are supported
 
-## async asyncFunc2(a)
+## async lambdas.asyncNestedFunctions.asyncFunc2(a)
 
 ## undocumentedArgumentFunction(arg1, arg2, ...args)
 
