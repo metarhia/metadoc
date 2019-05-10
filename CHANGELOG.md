@@ -11,6 +11,23 @@ and this project adheres to
 ### Added
 
 - Support for functions in nested objects.
+- Support for the following types:
+  - `Proxy`
+  - `URIError`
+  - `Intl.Collator`
+  - `Intl.DateTimeFormat`
+  - `Intl.ListFormat`
+  - `Intl.NumberFormat`
+  - `Intl.PluralRules`
+  - `Intl.RelativeTimeFormat`
+  - `WebAssembly.Global`
+  - `WebAssembly.Module`
+  - `WebAssembly.Instance`
+  - `WebAssembly.Memory`
+  - `WebAssembly.Table`
+  - `WebAssembly.CompileError`
+  - `WebAssembly.LinkError`
+  - `WebAssembly.RuntimeError`
 
 ## [0.5.3][] - 2019-05-07
 

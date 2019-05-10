@@ -226,23 +226,27 @@ PrototypeClass.prototype.method1 = function(num) {};
 PrototypeClass.method2 = function(num) {};
 
 // List of supported standard types:
-//   `Primitive`
 //   `boolean`,
 //   `null`,
 //   `undefined`,
 //   `number`,
 //   `string`,
 //   `symbol`,
+//
 //   `Object`,
 //   `Date`,
 //   `BigInt`,
 //   `Function`,
 //   `RegExp`,
+//   `Promise`,
 //   `DataView`,
+//   `Proxy`,
+//
 //   `Map`,
 //   `WeakMap`,
 //   `Set`,
 //   `WeakSet`,
+//
 //   `Array`,
 //   `ArrayBuffer`,
 //   `Int8Array`,
@@ -254,12 +258,33 @@ PrototypeClass.method2 = function(num) {};
 //   `Uint32Array`,
 //   `Float32Array`,
 //   `Float64Array`,
+//
 //   `Error`,
 //   `EvalError`,
-//   `TypeError`,
 //   `RangeError`,
-//   `SyntaxError`,
 //   `ReferenceError`,
+//   `SyntaxError`,
+//   `TypeError`,
+//   `URIError`,
+//
+//   `Intl.Collator`,
+//   `Intl.DateTimeFormat`,
+//   `Intl.ListFormat`,
+//   `Intl.NumberFormat`,
+//   `Intl.PluralRules`,
+//   `Intl.RelativeTimeFormat`,
+//
+//   `WebAssembly.Global`,
+//   `WebAssembly.Module`,
+//   `WebAssembly.Instance`,
+//   `WebAssembly.Memory`,
+//   `WebAssembly.Table`,
+//   `WebAssembly.CompileError`,
+//   `WebAssembly.LinkError`,
+//   `WebAssembly.RuntimeError`,
+//
+//   `Primitive`,
+//   `Iterable`,
 //   `this`
 //
 // List of supported non-standard types:
