@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+## [0.5.4][] - 2019-05-10
+
 ### Added
 
 - Support for functions in nested objects.
@@ -170,7 +172,8 @@ and this project adheres to
 
 - The first implementation of the package.
 
-[unreleased]: https://github.com/metarhia/metadoc/compare/v0.5.3...HEAD
+[unreleased]: https://github.com/metarhia/metadoc/compare/v0.5.4...HEAD
+[0.5.4]: https://github.com/metarhia/metadoc/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/metarhia/metadoc/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/metarhia/metadoc/compare/v0.5.1...v0.5.2
 [0.5.1]: https://github.com/metarhia/metadoc/compare/v0.5.0...v0.5.1
