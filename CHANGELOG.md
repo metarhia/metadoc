@@ -10,7 +10,7 @@ and this project adheres to
 
 ### Added
 
-- Support for functions in nested objects
+- Support for functions in nested objects.
 
 ## [0.5.3][] - 2019-05-07
 
