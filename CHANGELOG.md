@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+### Added
+
+- Support for functions in nested arrays.
+
 ## [0.5.4][] - 2019-05-10
 
 ### Added

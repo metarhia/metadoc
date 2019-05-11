@@ -134,6 +134,8 @@ Async functions are supported
 
 ## async lambdas.asyncNestedFunctions.asyncFunc2(a)
 
+## arrayExport\[0\](num1, num2)
+
 ## undocumentedArgumentFunction(arg1, arg2, ...args)
 
 ## undocumentedDestructureFn(arg1, { a, b = 3, c = 'hello, world' })
