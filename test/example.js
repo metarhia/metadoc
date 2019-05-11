@@ -160,6 +160,8 @@ const callAsyncFunction = fn =>
 // Returns: <number> result of `fn` execution
 const functionWithFunction = (fn, number) => fn(Math.random() * number);
 
+const arrayExportExample = (num1, num2) => {};
+
 // ExampleClass description
 // Static properties:
 //   staticProp <string> static property
@@ -312,6 +314,8 @@ module.exports = {
       asyncFunc2,
     },
   },
+
+  arrayExport: [arrayExportExample],
 
   undocumentedArgumentFunction,
   undocumentedDestructureFn,
