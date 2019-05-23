@@ -162,6 +162,8 @@ const functionWithFunction = (fn, number) => fn(Math.random() * number);
 
 const arrayExportExample = (num1, num2) => {};
 
+const lambdaInParamsFunctions = (fn = () => {}) => {};
+
 // ExampleClass description
 // Static properties:
 //   staticProp <string> static property
@@ -323,6 +325,8 @@ module.exports = {
   linksExample,
   callAsyncFunction,
   functionWithFunction,
+
+  lambdaInParamsFunctions,
 
   ExampleClass,
   AnotherClass,

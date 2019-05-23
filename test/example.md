@@ -183,6 +183,8 @@ _Returns:_ [`<number>`][number] result of `fn` execution
 
 Function with function
 
+## lambdaInParamsFunctions(fn = () => {})
+
 ## class ExampleClass
 
 ExampleClass description
