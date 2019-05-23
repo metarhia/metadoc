@@ -26,6 +26,10 @@ const args = yargs
     type: 'string',
     describe: 'file with footer for the resulting doc file',
   })
+  .option('private', {
+    type: 'boolean',
+    describe: 'Generate documentation for methods that have #private notation',
+  })
   .option('remove-interface', {
     type: 'boolean',
     describe: 'do not add interface header',
@@ -136,6 +140,7 @@ const getConfig = args => {
     header: '',
     footer: '',
     files: [],
+    private: false,
     removeInterface: false,
     interfaceLevel: level,
     functionLevel: level + 1,
