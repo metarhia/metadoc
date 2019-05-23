@@ -12,6 +12,10 @@ and this project adheres to
 
 - Support for `prettier-ignore` comment.
 
+### Fixed
+
+- Support for functions definitions in parameters.
+
 ## [0.5.5][] - 2019-05-11
 
 ### Added
