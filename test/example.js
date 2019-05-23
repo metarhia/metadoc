@@ -176,6 +176,12 @@ const functionsInFunctionParams = (
 
 const lambdaInLambda = x => y => x + y;
 
+// #private
+// Undocumented function
+// Documentation for functions that have `#private` notation will not be
+// generated unless it is specified via cli or config file
+const undocumentedFunction = (a, b, c) => {};
+
 // ExampleClass description
 // Static properties:
 //   staticProp <string> static property
@@ -204,10 +210,19 @@ class ExampleClass {
     return num * num;
   }
 
+  // #private
   // method3 description
+  // Documentation for this method will not be generated unless it is specified
+  // via cli or config file
   //   str <string>
   //   _num <number>
   _method3(str, _num) {}
+
+  // #private
+  // method4 description
+  // Documentation for this static method will not be generated unless it is
+  // specified via cli or config file
+  static method4() {}
 
   get getProp1() {
     return this.prop1;
@@ -225,6 +240,22 @@ class AnotherClass extends ExampleClass {
   //   data <string>
   method4(data) {
     this.data = data;
+  }
+}
+
+// #private
+// Private class
+// Documentation for this class and all its methods will not be generated
+class UndocumentedClass extends AnotherClass {
+  // UndocumentedClass constructor
+  //   abc <number>
+  constructor(abc) {
+    super();
+    this.abc = abc;
+  }
+
+  method5(str) {
+    this.str = str;
   }
 }
 
@@ -337,6 +368,7 @@ module.exports = {
   linksExample,
   callAsyncFunction,
   functionWithFunction,
+  undocumentedFunction,
 
   functionsInFunctionParams,
   lambdaInLambda,
@@ -344,4 +376,5 @@ module.exports = {
   ExampleClass,
   AnotherClass,
   PrototypeClass,
+  UndocumentedClass,
 };
