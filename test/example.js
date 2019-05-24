@@ -383,4 +383,12 @@ module.exports = {
   AnotherClass,
   PrototypeClass,
   UndocumentedClass,
+
+  instances: {
+    setInstance: new Set(),
+    exampleClassInstance: new ExampleClass({}, ''),
+  },
+
+  nullObject: null,
+  nullObjectCreate: Object.create(null),
 };

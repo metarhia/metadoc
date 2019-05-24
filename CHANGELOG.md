@@ -22,6 +22,7 @@ and this project adheres to
 - `eslint-disable` comments processing
 - Support for functions definitions in parameters.
 - Class constructor handling.
+- Class instance handling.
 
 ## [0.5.5][] - 2019-05-11
 
