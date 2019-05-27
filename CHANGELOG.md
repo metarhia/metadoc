@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+### Added
+
+- Support for `prettier-ignore` comment.
+
 ## [0.5.5][] - 2019-05-11
 
 ### Added
