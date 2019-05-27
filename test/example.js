@@ -162,7 +162,16 @@ const functionWithFunction = (fn, number) => fn(Math.random() * number);
 
 const arrayExportExample = (num1, num2) => {};
 
-const lambdaInParamsFunctions = (fn = () => {}) => {};
+const lambdaInParamsFunctions = (
+  lambda1 = () => {},
+  lambda2 = () => 123,
+  lambda3 = (...args) => {
+    console.log(args);
+  },
+  fn = function(num) {
+    console.log(num + num);
+  }
+) => {};
 
 // ExampleClass description
 // Static properties:

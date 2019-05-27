@@ -8,9 +8,9 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
-### Added
+### Fixed
 
-- Support for functions inside native parameters.
+- Support for functions definitions in parameters.
 
 ## [0.5.5][] - 2019-05-11
 

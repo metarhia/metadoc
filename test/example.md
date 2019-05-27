@@ -183,7 +183,7 @@ _Returns:_ [`<number>`][number] result of `fn` execution
 
 Function with function
 
-## lambdaInParamsFunctions(fn = () => {})
+## lambdaInParamsFunctions(lambda1 = () => {}, lambda2 = () => 123, lambda3 = (...args) => {console.log(args);}, fn = function(num) {console.log(num + num);})
 
 ## class ExampleClass
 
