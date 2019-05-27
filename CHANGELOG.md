@@ -15,6 +15,7 @@ and this project adheres to
 
 ### Fixed
 
+- `eslint-disable` comments processing
 - Support for functions definitions in parameters.
 
 ## [0.5.5][] - 2019-05-11
