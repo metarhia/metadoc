@@ -162,7 +162,7 @@ const functionWithFunction = (fn, number) => fn(Math.random() * number);
 
 const arrayExportExample = (num1, num2) => {};
 
-const lambdaInParamsFunctions = (
+const functionsInFunctionParams = (
   lambda1 = () => {},
   lambda2 = () => 123,
   lambda3 = (...args) => {
@@ -172,6 +172,8 @@ const lambdaInParamsFunctions = (
     console.log(num + num);
   }
 ) => {};
+
+const lambdaInLambda = x => y => x + y;
 
 // ExampleClass description
 // Static properties:
@@ -335,7 +337,8 @@ module.exports = {
   callAsyncFunction,
   functionWithFunction,
 
-  lambdaInParamsFunctions,
+  functionsInFunctionParams,
+  lambdaInLambda,
 
   ExampleClass,
   AnotherClass,
