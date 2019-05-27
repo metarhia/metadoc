@@ -168,6 +168,7 @@ const functionsInFunctionParams = (
   lambda3 = (...args) => {
     console.log(args);
   },
+  lambda4 = a => {},
   fn = function(num) {
     console.log(num + num);
   }
