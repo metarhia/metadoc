@@ -239,7 +239,7 @@ method1 description
 
 - [`<string>`][string]
 
-### AnotherClass.prototype.constructor(data)
+### AnotherClass.prototype.constructor(...args)
 
 ### AnotherClass.prototype.method4(data)
 
@@ -247,22 +247,21 @@ method1 description
 
 method4 description
 
-## class PrototypeClass
+## PrototypeClass(arg1, arg2)
 
-PrototypeClass description and PrototypeClass constructor description
+- `arg1`: [`<Object>`][object]
+- `arg2`: [`<string>`][string]
+
+PrototypeClass description description
+
+Note that classes on prototypes will not have constructors and will be treated
+as a regular `<function>`.
 
 ### PrototypeClass.method2(num)
 
 - `num`: [`<number>`][number]
 
 method1 description
-
-### PrototypeClass.prototype.constructor(arg1, arg2)
-
-- `arg1`: [`<Object>`][object]
-- `arg2`: [`<string>`][string]
-
-PrototypeClass description and PrototypeClass constructor description
 
 ### PrototypeClass.prototype.method1(num)
 

@@ -236,6 +236,10 @@ class ExampleClass {
 // Properties:
 //   prop <string>
 class AnotherClass extends ExampleClass {
+  constructor(...args) {
+    super(...args);
+  }
+
   // method4 description
   //   data <string>
   method4(data) {
@@ -259,7 +263,9 @@ class UndocumentedClass extends AnotherClass {
   }
 }
 
-// PrototypeClass description and PrototypeClass constructor description
+// PrototypeClass description description
+// Note that classes on prototypes will not have constructors and will be
+// treated as a regular <function>.
 //   arg1 <Object>
 //   arg2 <string>
 const PrototypeClass = function(arg1, arg2) {};
