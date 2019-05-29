@@ -227,18 +227,18 @@ method2 description
 
 ExampleClass constructor description
 
-### ExampleClass.prototype.method1(arr)
-
-- `arr`: [`<Array>`][array]
-
-method1 description
-
 ### ExampleClass.prototype.\_method3(str, \_num)
 
 - `str`: [`<string>`][string]
 - `_num`: [`<number>`][number]
 
 method3 description
+
+### ExampleClass.prototype.method1(arr)
+
+- `arr`: [`<Array>`][array]
+
+method1 description
 
 ## class AnotherClass extends ExampleClass
 

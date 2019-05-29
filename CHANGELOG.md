@@ -11,6 +11,7 @@ and this project adheres to
 ### Added
 
 - Support for `prettier-ignore` comment.
+- Sort generated methods by name.
 
 ### Fixed
 
