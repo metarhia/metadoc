@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+## [0.5.6][] - 2019-05-31
+
 ### Added
 
 - Support for `prettier-ignore` comment.
@@ -194,7 +196,8 @@ and this project adheres to
 
 - The first implementation of the package.
 
-[unreleased]: https://github.com/metarhia/metadoc/compare/v0.5.5...HEAD
+[unreleased]: https://github.com/metarhia/metadoc/compare/v0.5.6...HEAD
+[0.5.6]: https://github.com/metarhia/metadoc/compare/v0.5.5...v0.5.6
 [0.5.5]: https://github.com/metarhia/metadoc/compare/v0.5.4...v0.5.5
 [0.5.4]: https://github.com/metarhia/metadoc/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/metarhia/metadoc/compare/v0.5.2...v0.5.3
