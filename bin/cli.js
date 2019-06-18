@@ -140,6 +140,7 @@ const getConfig = args => {
     header: '',
     footer: '',
     files: [],
+    customTypes: [],
     private: false,
     removeInterface: false,
     interfaceLevel: level,
