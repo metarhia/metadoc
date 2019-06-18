@@ -12,6 +12,11 @@ and this project adheres to
 
 - Use `main` field from `package.json` as default file if available.
 
+### Fixed
+
+- Handle documentation generation when function parameters have incorrect
+  padding.
+
 ## [0.5.6][] - 2019-05-31
 
 ### Added
