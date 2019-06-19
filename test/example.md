@@ -233,7 +233,7 @@ ExampleClass constructor description
 
 method1 description
 
-## class AnotherClass extends ExampleClass
+## class AnotherClass extends [ExampleClass][example-exampleclass]
 
 ### AnotherClass.prototype.prop
 
@@ -279,6 +279,7 @@ method1 description
 
 [meta doc]: https://github.com/metarhia/metadoc
 [introspect()]: https://github.com/metarhia/metadoc#introspectnamespace-text
+[example-exampleclass]: #class-exampleclass
 [object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 [function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
