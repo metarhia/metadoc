@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+### Changed
+
+- Use `main` field from `package.json` as default file if available.
+
 ## [0.5.6][] - 2019-05-31
 
 ### Added
