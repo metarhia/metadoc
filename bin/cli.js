@@ -168,7 +168,14 @@ const getConfig = args => {
     config.footer += fs.readFileSync(footerFile, 'utf8');
   }
 
-  config.files = loadFiles(config.files).map(file => path.resolve(file));
+  if (config.files.length === 0 && fs.existsSync('package.json')) {
+    const pkg = require(path.resolve('./package.json'));
+    if (pkg.main && fs.existsSync(pkg.main)) {
+      config.files.push(path.resolve(pkg.main));
+    }
+  } else {
+    config.files = loadFiles(config.files).map(file => path.resolve(file));
+  }
 
   if (cfg.customLinks) {
     config.customTypes = Object.keys(cfg.customLinks);
