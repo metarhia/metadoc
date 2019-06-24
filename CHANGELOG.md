@@ -15,6 +15,8 @@ and this project adheres to
 - Support adding namespace prefix to the entities names.
 - Support for `BigInt64Array` and `BigUint64Array` types.
 - Support ordering documentation entries.
+- Implement `Resolves` comment. It can be used to specify what async function or
+  Promise will resolve.
 
 ### Changed
 

@@ -225,6 +225,11 @@ Function with no arguments
 
 _Returns:_ [`<Promise>`][promise]
 
+_Resolves:_ [`<Object>`][object]
+
+- `a`: [`<number>`][number]
+- `b`: [`<string>`][string]
+
 Async functions are supported
 
 ## async lambdas.asyncNestedFunctions.asyncFunc2(a)

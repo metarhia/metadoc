@@ -118,7 +118,15 @@ const asyncLambda = async () => {};
 
 // Async functions are supported
 // Returns: <Promise>
-const asyncFunc = async function() {};
+// Resolves: <Object>
+//   a <number>
+//   b <string>
+const asyncFunc = async function() {
+  return {
+    a: 3,
+    b: 'abc',
+  };
+};
 
 const asyncFunc2 = async function(a) {
   console.log(a);
