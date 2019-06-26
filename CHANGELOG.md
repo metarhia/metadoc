@@ -11,6 +11,7 @@ and this project adheres to
 ### Changed
 
 - Use `main` field from `package.json` as default file if available.
+- Generate classes links.
 
 ### Fixed
 
