@@ -231,13 +231,22 @@ ExampleClass description
 
 - [`<string>`][string] static property
 
+### ExampleClass.staticProp1
+
+- [`<Object>`][object] static property
+  - `staticProp2`: [`<string>`][string] static property field
+
 ### ExampleClass.prototype.prop1
 
 - [`<string>`][string] property
 
 ### ExampleClass.prototype.prop2
 
-- [`<Object>`][object]
+- [`<Object>`][object] prop description
+  - `field1`: [`<number>`][number] prop field1 description
+    - `field2`: [`<number>`][number] prop field2 description
+  - `field3`
+  - `field4`: [`<number>`][number]
 
 ### ExampleClass.prototype.getProp1
 

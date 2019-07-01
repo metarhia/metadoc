@@ -11,6 +11,7 @@ and this project adheres to
 ### Added
 
 - Support generating contents table for API.
+- Support for nested fields of properties.
 
 ### Changed
 

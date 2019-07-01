@@ -185,9 +185,15 @@ const undocumentedFunction = (a, b, c) => {};
 // ExampleClass description
 // Static properties:
 //   staticProp <string> static property
+//   staticProp1 <Object> static property
+//     staticProp2 <string> static property field
 // Properties:
 //   prop1 <string> property
-//   prop2 <Object>
+//   prop2 <Object> prop description
+//     field1 <number> prop field1 description
+//       field2 <number> prop field2 description
+//     field3
+//     field4 <number>
 //   getProp1 <string> getter for `prop1`
 //   setProp1 <string> setter for `prop1`
 class ExampleClass {
