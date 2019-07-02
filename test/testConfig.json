@@ -6,5 +6,11 @@
     "meta doc": "https://github.com/metarhia/metadoc",
     "introspect()": "https://github.com/metarhia/metadoc#introspectnamespace-text"
   },
+  "prioritizedEntries": [
+    "methodName",
+    "noTitleFunction",
+    "typeFunction",
+    "ExampleClass"
+  ],
   "outputDir": "test/"
 }

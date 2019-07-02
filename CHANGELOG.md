@@ -14,6 +14,7 @@ and this project adheres to
 - Support for nested fields of properties.
 - Support adding namespace prefix to the entities names.
 - Support for `BigInt64Array` and `BigUint64Array` types.
+- Support ordering documentation entries.
 
 ### Changed
 
