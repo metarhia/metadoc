@@ -16,6 +16,7 @@ and this project adheres to
 
 - Use `main` field from `package.json` as default file if available.
 - Generate class links.
+- Support overriding default types links.
 
 ### Fixed
 
