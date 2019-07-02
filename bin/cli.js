@@ -127,7 +127,7 @@ const mergeConfigs = (args, cfg, defaultCfg) => {
   Object.entries(defaultCfg).forEach(
     ([key, defaultVal]) =>
       (result[key] = Array.isArray(defaultVal)
-        ? common.merge(args[key] || [], cfg.files || [], defaultVal)
+        ? common.merge(args[key] || [], cfg[key] || [], defaultVal)
         : select(args[key], cfg[key], defaultVal))
   );
   return result;
@@ -149,6 +149,7 @@ const getConfig = args => {
     footer: '',
     files: [],
     customTypes: [],
+    prioritizedEntries: [],
     private: false,
     contentsTable: 0,
     removeInterface: false,

@@ -1,9 +1,13 @@
 - [Interface example](#interface-example)
   - [methodName](#methodnamenum-str-arg-flag-arr-data-obj-cb)
-  - [restFunc](#restfunc)
-  - [typeFunction](#typefunctionobj-arg1-arg2-arg3)
-  - [noArgumentsFunction](#noargumentsfunction)
   - [noTitleFunction](#notitlefunctionstr-num)
+  - [typeFunction](#typefunctionobj-arg1-arg2-arg3)
+  - [ExampleClass](#class-exampleclass)
+    - [ExampleClass.method2](#exampleclassmethod2num)
+    - [ExampleClass.prototype.constructor](#exampleclassprototypeconstructorarg1-arg2)
+    - [ExampleClass.prototype.method1](#exampleclassprototypemethod1arr)
+  - [restFunc](#restfunc)
+  - [noArgumentsFunction](#noargumentsfunction)
   - [noDescriptionFunction](#nodescriptionfunction)
   - [lambdas.oneArgumentNested.oneArgumentLambda](#lambdasoneargumentnestedoneargumentlambdaa)
   - [lambdas.oneArgumentNested.oneArgumentLambda2](#lambdasoneargumentnestedoneargumentlambda2a)
@@ -21,10 +25,6 @@
   - [functionWithFunction](#functionwithfunctionfn-number)
   - [functionsInFunctionParams](#functionsinfunctionparamslambda1-----lambda2----123-lambda3--args--consolelogargs-lambda4--a---fn--functionnum-consolelognum--num)
   - [lambdaInLambda](#lambdainlambdax)
-  - [ExampleClass](#class-exampleclass)
-    - [ExampleClass.method2](#exampleclassmethod2num)
-    - [ExampleClass.prototype.constructor](#exampleclassprototypeconstructorarg1-arg2)
-    - [ExampleClass.prototype.method1](#exampleclassprototypemethod1arr)
   - [AnotherClass](#class-anotherclass-extends-exampleclass)
     - [AnotherClass.prototype.constructor](#anotherclassprototypeconstructorargs)
     - [AnotherClass.prototype.method4](#anotherclassprototypemethod4data)
@@ -118,16 +118,10 @@ _Result:_
 };
 ```
 
-## restFunc()
+## noTitleFunction(str, num)
 
-## restFunc(arg, ...arr)
-
-## restFunc(arg, arr)
-
-- `arg`: [`<string>`][string]
-- `arr`: [`<number[]>`][number]
-
-Function with rest arguments
+- `str`: [`<string>`][string]
+- `num`: [`<number>`][number]
 
 ## typeFunction(obj, arg1, arg2, arg3)
 
@@ -139,16 +133,77 @@ Function with rest arguments
 
 Description can also support types like [`<number>`][number]
 
+## class ExampleClass
+
+ExampleClass description
+
+### ExampleClass.staticProp
+
+- [`<string>`][string] static property
+
+### ExampleClass.staticProp1
+
+- [`<Object>`][object] static property
+  - `staticProp2`: [`<string>`][string] static property field
+
+### ExampleClass.prototype.prop1
+
+- [`<string>`][string] property
+
+### ExampleClass.prototype.prop2
+
+- [`<Object>`][object] prop description
+  - `field1`: [`<number>`][number] prop field1 description
+    - `field2`: [`<number>`][number] prop field2 description
+  - `field3`
+  - `field4`: [`<number>`][number]
+
+### ExampleClass.prototype.getProp1
+
+- [`<string>`][string] getter for `prop1`
+
+### ExampleClass.prototype.setProp1
+
+- [`<string>`][string] setter for `prop1`
+
+### ExampleClass.method2(num)
+
+- `num`: [`<number>`][number]
+
+_Returns:_ [`<number>`][number] undescore and asterisk should be escaped: num \*
+num
+
+method2 description
+
+### ExampleClass.prototype.constructor(arg1, arg2)
+
+- `arg1`: [`<Object>`][object]
+- `arg2`: [`<string>`][string]
+
+ExampleClass constructor description
+
+### ExampleClass.prototype.method1(arr)
+
+- `arr`: [`<Array>`][array]
+
+method1 description
+
+## restFunc()
+
+## restFunc(arg, ...arr)
+
+## restFunc(arg, arr)
+
+- `arg`: [`<string>`][string]
+- `arr`: [`<number[]>`][number]
+
+Function with rest arguments
+
 ## noArgumentsFunction()
 
 _Returns:_ [`<string>`][string]
 
 Function with no arguments
-
-## noTitleFunction(str, num)
-
-- `str`: [`<string>`][string]
-- `num`: [`<number>`][number]
 
 ## noDescriptionFunction()
 
@@ -222,61 +277,6 @@ Function with function
 ## functionsInFunctionParams(lambda1 = () => {}, lambda2 = () => 123, lambda3 = (...args) => {console.log(args);}, lambda4 = a => {}, fn = function(num) {console.log(num + num);})
 
 ## lambdaInLambda(x)
-
-## class ExampleClass
-
-ExampleClass description
-
-### ExampleClass.staticProp
-
-- [`<string>`][string] static property
-
-### ExampleClass.staticProp1
-
-- [`<Object>`][object] static property
-  - `staticProp2`: [`<string>`][string] static property field
-
-### ExampleClass.prototype.prop1
-
-- [`<string>`][string] property
-
-### ExampleClass.prototype.prop2
-
-- [`<Object>`][object] prop description
-  - `field1`: [`<number>`][number] prop field1 description
-    - `field2`: [`<number>`][number] prop field2 description
-  - `field3`
-  - `field4`: [`<number>`][number]
-
-### ExampleClass.prototype.getProp1
-
-- [`<string>`][string] getter for `prop1`
-
-### ExampleClass.prototype.setProp1
-
-- [`<string>`][string] setter for `prop1`
-
-### ExampleClass.method2(num)
-
-- `num`: [`<number>`][number]
-
-_Returns:_ [`<number>`][number] undescore and asterisk should be escaped: num \*
-num
-
-method2 description
-
-### ExampleClass.prototype.constructor(arg1, arg2)
-
-- `arg1`: [`<Object>`][object]
-- `arg2`: [`<string>`][string]
-
-ExampleClass constructor description
-
-### ExampleClass.prototype.method1(arr)
-
-- `arr`: [`<Array>`][array]
-
-method1 description
 
 ## class AnotherClass extends [ExampleClass][example-exampleclass]
 
