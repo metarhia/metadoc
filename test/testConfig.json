@@ -1,6 +1,7 @@
 {
   "files": ["test/example.js"],
   "customLinks": {
+    "number": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
     "meta doc": "https://github.com/metarhia/metadoc",
     "introspect()": "https://github.com/metarhia/metadoc#introspectnamespace-text"
   },

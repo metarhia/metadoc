@@ -277,9 +277,6 @@ method1 description
 
 - `<ExampleClass>`
 
-[meta doc]: https://github.com/metarhia/metadoc
-[introspect()]: https://github.com/metarhia/metadoc#introspectnamespace-text
-[example-exampleclass]: #class-exampleclass
 [object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 [function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
@@ -290,6 +287,9 @@ method1 description
 [error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 [typeerror]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError
 [boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type
-[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 [string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
 [symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type
+[meta doc]: https://github.com/metarhia/metadoc
+[introspect()]: https://github.com/metarhia/metadoc#introspectnamespace-text
+[example-exampleclass]: #class-exampleclass
