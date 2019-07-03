@@ -1,4 +1,5 @@
 {
+  "contentsTable": true,
   "files": ["test/example.js"],
   "customLinks": {
     "meta doc": "https://github.com/metarhia/metadoc",
