@@ -27,3 +27,5 @@ Options:
 ```
 
 ## API
+
+### Table of Contents
