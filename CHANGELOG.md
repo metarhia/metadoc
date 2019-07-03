@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+### Added
+
+- Support generating contents table for API.
+
 ### Changed
 
 - Use `main` field from `package.json` as default file if available.

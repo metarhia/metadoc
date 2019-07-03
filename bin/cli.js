@@ -30,6 +30,10 @@ const args = yargs
     type: 'boolean',
     describe: 'Generate documentation for methods that have #private notation',
   })
+  .option('contents-table', {
+    type: 'number',
+    describe: 'Generate contents table for API',
+  })
   .option('remove-interface', {
     type: 'boolean',
     describe: 'do not add interface header',
@@ -142,6 +146,7 @@ const getConfig = args => {
     files: [],
     customTypes: [],
     private: false,
+    contentsTable: 0,
     removeInterface: false,
     interfaceLevel: level,
     functionLevel: level + 1,
@@ -158,6 +163,9 @@ const getConfig = args => {
     outputDir: args.outputDir,
     outputFile: args.outputFile,
   };
+
+  if (config.contentsTable === true) config.contentsTable = 0;
+  else if (config.contentsTable === false) config.contentsTable = -1;
 
   const headerFile = args.headerFile || cfg.headerFile;
   if (headerFile && fs.existsSync(headerFile)) {
