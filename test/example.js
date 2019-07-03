@@ -193,7 +193,7 @@ const undocumentedFunction = (a, b, c) => {};
 //     field1 <number> prop field1 description
 //       field2 <number> prop field2 description
 //     field3
-//     field3 <number>
+//     field4 <number>
 //   getProp1 <string> getter for `prop1`
 //   setProp1 <string> setter for `prop1`
 class ExampleClass {

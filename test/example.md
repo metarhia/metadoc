@@ -246,7 +246,7 @@ ExampleClass description
   - `field1`: [`<number>`][number] prop field1 description
     - `field2`: [`<number>`][number] prop field2 description
   - `field3`
-  - `field3`: [`<number>`][number]
+  - `field4`: [`<number>`][number]
 
 ### ExampleClass.prototype.getProp1
 
