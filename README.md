@@ -28,7 +28,11 @@ Options:
 
 ## API
 
-### Interface: doc
+### Table of Contents
+
+- [introspect](#introspectnamespace-text)
+- [parseSignature](#parsesignaturefn-text-start)
+- [generateMd](#generatemdinventory-options)
 
 #### introspect(namespace, text)
 
