@@ -1,7 +1,7 @@
 {
   "headerFile": "doc/header.md",
   "footerFile": "doc/footer.md",
-  "generateContentsTable": true,
+  "contentsTable": true,
   "removeInterface": true,
   "minHeaderLevel": 3,
   "files": ["doc.js"],
