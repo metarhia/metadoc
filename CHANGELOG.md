@@ -12,6 +12,7 @@ and this project adheres to
 
 - Support generating contents table for API.
 - Support for nested fields of properties.
+- Support adding namespace prefix to the entities names.
 
 ### Changed
 

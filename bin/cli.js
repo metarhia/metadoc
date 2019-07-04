@@ -38,6 +38,10 @@ const args = yargs
     type: 'boolean',
     describe: 'do not add interface header',
   })
+  .option('namespace-prefix', {
+    type: 'boolean',
+    describe: 'generate namespace prefix',
+  })
   .option('min-header-level', {
     type: 'number',
     describe: 'minimal header level',
@@ -148,6 +152,7 @@ const getConfig = args => {
     private: false,
     contentsTable: 0,
     removeInterface: false,
+    namespacePrefix: false,
     interfaceLevel: level,
     functionLevel: level + 1,
     classLevel: level + 1,
