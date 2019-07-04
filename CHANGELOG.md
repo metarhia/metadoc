@@ -24,6 +24,7 @@ and this project adheres to
 
 - Handle documentation generation when function parameters have incorrect
   padding.
+- Do not generate extra empty line after links if there are no links.
 
 ## [0.5.6][] - 2019-05-31
 
