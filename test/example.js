@@ -317,6 +317,8 @@ PrototypeClass.method2 = function(num) {};
 //   `Uint32Array`,
 //   `Float32Array`,
 //   `Float64Array`,
+//   `BigInt64Array`
+//   `BigUint64Array`
 //
 //   `Error`,
 //   `EvalError`,
