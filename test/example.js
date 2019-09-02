@@ -78,6 +78,8 @@ const methodName = (num, str, arg, flag, arr, data, obj, cb) => {};
 // Signature:
 // Signature: arg, ...arr
 // Signature: arg, arr
+// Signature: arg = 'abc', arr = []
+// Signature: arg = 'abc'[, arr = []]
 //   arg <string>
 //   arr <number[]>
 const restFunc = (arg, ...arr) => {};
