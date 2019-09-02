@@ -194,6 +194,10 @@ method1 description
 
 ## restFunc(arg, arr)
 
+## restFunc(arg = 'abc', arr = \[\])
+
+## restFunc(arg = 'abc'\[, arr = \[\]\])
+
 - `arg`: [`<string>`][string]
 - `arr`: [`<number[]>`][number]
 
