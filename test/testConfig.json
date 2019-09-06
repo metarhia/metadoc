@@ -12,5 +12,6 @@
     "typeFunction",
     "ExampleClass"
   ],
+  "separateTitleDescription": false,
   "outputDir": "test/"
 }

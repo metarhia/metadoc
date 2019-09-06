@@ -34,6 +34,10 @@ const args = yargs
     type: 'number',
     describe: 'Generate contents table for API',
   })
+  .option('separate-title-description', {
+    type: 'boolean',
+    describe: 'Generate separated title and description',
+  })
   .option('remove-interface', {
     type: 'boolean',
     describe: 'do not add interface header',
@@ -152,6 +156,7 @@ const getConfig = args => {
     prioritizedEntries: [],
     private: false,
     contentsTable: 0,
+    separateTitleDescription: true,
     removeInterface: false,
     namespacePrefix: false,
     interfaceLevel: level,
