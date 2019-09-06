@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+### Added
+
+- Support separating `title` and `description` of function via
+  `separateTitleDescription` field in config file or
+  `--separate-title-description` cli flag.
+  By default, title and description will be separated.
+
 ## [0.6.0][] - 2019-12-30
 
 ### Added

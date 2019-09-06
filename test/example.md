@@ -73,7 +73,6 @@ defined above
 - `strArr`: [`<string[]>`][string]
 
 One-liner function description.
-
 Multi-line expanded function description. Note that all lines should have length
 of 80 or less characters. To specify custom arguments signature `Signature:`
 comment can be used. It also supports multiline. Backticks `are supported` and
@@ -244,7 +243,6 @@ Async functions are supported
   [`introspect()`][introspect()].
 
 Example of links usage
-
 To create a link the following format should be used: [`meta doc`][meta doc].
 Links can have whitespace characters. And you still can use braces inside
 backticks to, for example, specify object `{ a: 1, b: 2 }`.
@@ -302,7 +300,6 @@ method4 description
 - `arg2`: [`<string>`][string]
 
 PrototypeClass description description
-
 Note that classes on prototypes will not have constructors and will be treated
 as a regular `<function>`.
 
