@@ -37,8 +37,8 @@
     "eslint": "^5.16.0",
     "eslint-config-metarhia": "^7.0.0",
     "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "prettier": "1.17.x"
   },
   "dependencies": {
