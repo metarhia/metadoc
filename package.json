@@ -34,15 +34,15 @@
     "node": ">=8.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-metarhia": "^7.0.0",
-    "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-prettier": "^3.1.2",
+    "eslint": "^7.1.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
     "prettier": "1.17.x"
   },
   "dependencies": {
-    "@metarhia/common": "^1.5.0",
-    "yargs": "^12.0.5"
+    "@metarhia/common": "^2.1.0",
+    "yargs": "^15.3.1"
   }
 }
