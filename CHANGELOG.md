@@ -15,6 +15,10 @@ and this project adheres to
   `--separate-title-description` cli flag.
   By default, title and description will be separated.
 
+## [0.6.1][] - 2020-06-03
+
+Update dependencies and bump version.
+
 ## [0.6.0][] - 2019-12-30
 
 ### Added
@@ -226,7 +230,8 @@ and this project adheres to
 
 - The first implementation of the package.
 
-[unreleased]: https://github.com/metarhia/metadoc/compare/v0.6.0...HEAD
+[unreleased]: https://github.com/metarhia/metadoc/compare/v0.6.1...HEAD
+[0.6.1]: https://github.com/metarhia/metadoc/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/metarhia/metadoc/compare/v0.5.6...v0.6.0
 [0.5.6]: https://github.com/metarhia/metadoc/compare/v0.5.5...v0.5.6
 [0.5.5]: https://github.com/metarhia/metadoc/compare/v0.5.4...v0.5.5
