@@ -25,6 +25,7 @@
   - [functionWithFunction](#functionwithfunctionfn-number)
   - [functionsInFunctionParams](#functionsinfunctionparamslambda1-----lambda2----123-lambda3--args--consolelogargs-lambda4--a---fn--functionnum-consolelognum--num)
   - [lambdaInLambda](#lambdainlambdax)
+  - [functionWithComplexTypes](#functionwithcomplextypesexample-ff-objs-map)
   - [AnotherClass](#class-anotherclass-extends-exampleclass)
     - [AnotherClass.prototype.constructor](#anotherclassprototypeconstructorargs)
     - [AnotherClass.prototype.method4](#anotherclassprototypemethod4data)
@@ -279,6 +280,15 @@ Function with function
 ## functionsInFunctionParams(lambda1 = () => {}, lambda2 = () => 123, lambda3 = (...args) => {console.log(args);}, lambda4 = a => {}, fn = function(num) {console.log(num + num);})
 
 ## lambdaInLambda(x)
+
+## functionWithComplexTypes(example, ff, objs, map)
+
+- `example`: `<ExampleClass[]>`
+- `ff`: [`<Map>`][map]|[`<Object>`][object]|[ [`<string>`][string], `<'b'>` ]
+- `objs`: `<Array<{ a: string; b: number }>>`
+- `map`: `<Map<string, { a: 42 | 13 }>>`|`<Map<number, string>>`
+
+functionWithComplexTypes
 
 ## class AnotherClass extends [ExampleClass][example-exampleclass]
 

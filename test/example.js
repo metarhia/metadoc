@@ -286,6 +286,13 @@ PrototypeClass.prototype.method1 = function(num) {};
 //   arr <Array>
 PrototypeClass.method2 = function(num) {};
 
+// functionWithComplexTypes
+//   example <ExampleClass[]>
+//   ff <Map> | <Object> | [<string>, <'b'>]
+//   objs <Array<{ a: string; b: number }>>
+//   map <Map<string, { a: 42 | 13 }>> | <Map<number, string>>
+const functionWithComplexTypes = (examples, objs, map) => {};
+
 // List of supported standard types:
 //   `boolean`,
 //   `null`,
@@ -388,6 +395,8 @@ module.exports = {
 
   functionsInFunctionParams,
   lambdaInLambda,
+
+  functionWithComplexTypes,
 
   ExampleClass,
   AnotherClass,
