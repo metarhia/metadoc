@@ -138,7 +138,8 @@ const undocumentedDefaultFn = (arg1, arg2 = 'hello, world') => {};
 // Links can have whitespace characters. And you still can use braces inside
 // backticks to, for example, specify object `{ a: 1, b: 2 }`.
 //   link <string> links can be also used across all comments and links names
-//       can have parentheses at the end like `{introspect()}`.
+//       can have parentheses at the end like `{introspect()}` or
+//       `{ExampleClass#method1()}` or `{ExampleClass#getProp1}`.
 const linksExample = link => console.log('Link:', link);
 
 // Call async function
@@ -232,6 +233,7 @@ class ExampleClass {
   // specified via cli or config file
   static method4() {}
 
+  // Property getter
   get getProp1() {
     return this.prop1;
   }

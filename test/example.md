@@ -240,7 +240,9 @@ Async functions are supported
 
 - `link`: [`<string>`][string] links can be also used across all comments and
   links names can have parentheses at the end like
-  [`introspect()`][introspect()].
+  [`introspect()`][introspect()] or
+  [`ExampleClass#method1()`][exampleclass#method1()] or
+  [`ExampleClass#getProp1`][exampleclass#getprop1].
 
 Example of links usage
 To create a link the following format should be used: [`meta doc`][meta doc].
@@ -338,4 +340,6 @@ method1 description
 [symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type
 [meta doc]: https://github.com/metarhia/metadoc
 [introspect()]: https://github.com/metarhia/metadoc#introspectnamespace-text
+[exampleclass#method1()]: #prototypeclassprototypemethod1num
+[exampleclass#getprop1]: #prototypeclassprototypegetprop1
 [example-exampleclass]: #class-exampleclass
