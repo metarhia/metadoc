@@ -1,6 +1,6 @@
 # Metarhia Documentation Generator
 
-![CI Status Badge](https://github.com/metarhia/metadoc/workflows/Testing%20CI/badge.svg?branch=master)
+[![Testing CI](https://github.com/metarhia/metadoc/workflows/Testing%20CI/badge.svg)](https://github.com/metarhia/metadoc/actions)
 
 ## Installation
 
