@@ -14,6 +14,12 @@ and this project adheres to
   `separateTitleDescription` field in config file or
   `--separate-title-description` cli flag.
   By default, title and description will be separated.
+- Support for complex/nested types in declarations.
+
+### Fixed
+
+- Generation of custom refs with '#' sign in them.
+- Multiple refs on single line.
 
 ## [0.6.1][] - 2020-06-03
 
