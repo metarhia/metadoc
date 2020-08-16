@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+## [0.7.0][] - 2020-08-16
+
 ### Added
 
 - Support separating `title` and `description` of function via
@@ -236,7 +238,8 @@ Update dependencies and bump version.
 
 - The first implementation of the package.
 
-[unreleased]: https://github.com/metarhia/metadoc/compare/v0.6.1...HEAD
+[unreleased]: https://github.com/metarhia/metadoc/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/metarhia/metadoc/compare/v0.6.1...v0.7.0
 [0.6.1]: https://github.com/metarhia/metadoc/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/metarhia/metadoc/compare/v0.5.6...v0.6.0
 [0.5.6]: https://github.com/metarhia/metadoc/compare/v0.5.5...v0.5.6
