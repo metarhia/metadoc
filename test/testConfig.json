@@ -9,6 +9,10 @@
     "ExampleClass#getProp1": "#prototypeclassprototypegetprop1"
   },
   "prioritizedEntries": [
+    "Order2Class",
+    "Order1Class",
+    "Order1Class.prototype.order2Method",
+    "Order1Class.prototype.order1Method",
     "methodName",
     "noTitleFunction",
     "typeFunction",

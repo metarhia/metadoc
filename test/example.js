@@ -273,6 +273,24 @@ class UndocumentedClass extends AnotherClass {
   }
 }
 
+// Order1Class should be ordered correctly.
+class Order1Class {
+  constructor(abc) {}
+
+  order1Method() {}
+
+  order2Method() {}
+
+  order3Method() {}
+}
+
+// Order2Class should be ordered correctly.
+class Order2Class {
+  constructor(abc) {}
+
+  order2Method() {}
+}
+
 // PrototypeClass description description
 // Note that classes on prototypes will not have constructors and will be
 // treated as a regular <function>.
@@ -412,4 +430,6 @@ module.exports = {
 
   nullObject: null,
   nullObjectCreate: Object.create(null),
+  Order1Class,
+  Order2Class,
 };

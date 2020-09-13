@@ -1,4 +1,12 @@
 - [Interface example](#interface-example)
+  - [Order2Class](#class-order2class)
+    - [Order2Class.prototype.constructor](#order2classprototypeconstructorabc)
+    - [Order2Class.prototype.order2Method](#order2classprototypeorder2method)
+  - [Order1Class](#class-order1class)
+    - [Order1Class.prototype.order2Method](#order1classprototypeorder2method)
+    - [Order1Class.prototype.order1Method](#order1classprototypeorder1method)
+    - [Order1Class.prototype.constructor](#order1classprototypeconstructorabc)
+    - [Order1Class.prototype.order3Method](#order1classprototypeorder3method)
   - [methodName](#methodnamenum-str-arg-flag-arr-data-obj-cb)
   - [noTitleFunction](#notitlefunctionstr-num)
   - [typeFunction](#typefunctionobj-arg1-arg2-arg3)
@@ -36,6 +44,26 @@
   - [instances.exampleClassInstance](#instancesexampleclassinstance)
 
 # Interface: example
+
+## class Order2Class
+
+Order2Class should be ordered correctly.
+
+### Order2Class.prototype.constructor(abc)
+
+### Order2Class.prototype.order2Method()
+
+## class Order1Class
+
+Order1Class should be ordered correctly.
+
+### Order1Class.prototype.order2Method()
+
+### Order1Class.prototype.order1Method()
+
+### Order1Class.prototype.constructor(abc)
+
+### Order1Class.prototype.order3Method()
 
 ## methodName(num, str, arg, flag\[, arr\[, data\]\], obj, cb)
 
