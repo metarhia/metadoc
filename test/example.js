@@ -288,6 +288,8 @@ class Order1Class {
 class Order2Class {
   constructor(abc) {}
 
+  aMethod() {}
+
   order2Method() {}
 }
 

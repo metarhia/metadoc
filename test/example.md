@@ -1,6 +1,7 @@
 - [Interface example](#interface-example)
   - [Order2Class](#class-order2class)
     - [Order2Class.prototype.constructor](#order2classprototypeconstructorabc)
+    - [Order2Class.prototype.aMethod](#order2classprototypeamethod)
     - [Order2Class.prototype.order2Method](#order2classprototypeorder2method)
   - [Order1Class](#class-order1class)
     - [Order1Class.prototype.order2Method](#order1classprototypeorder2method)
@@ -50,6 +51,8 @@
 Order2Class should be ordered correctly.
 
 ### Order2Class.prototype.constructor(abc)
+
+### Order2Class.prototype.aMethod()
 
 ### Order2Class.prototype.order2Method()
 
