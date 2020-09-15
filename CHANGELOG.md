@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased][unreleased]
 
+### Fixed
+
+- `prioritizedEntries` with nested clases. It will now correctly order nested
+  class methods and fields under the class if the name of the class is specified
+  in `prioritizedEntries`.
+
 ## [0.7.0][] - 2020-08-16
 
 ### Added
