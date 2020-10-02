@@ -32,6 +32,8 @@
   - [linksExample](#linksexamplelink)
   - [callAsyncFunction](#callasyncfunctionfn)
   - [functionWithFunction](#functionwithfunctionfn-number)
+  - [underscoresInParamsFunctions](#underscoresinparamsfunctionsnum--__some_default__value_)
+  - [bracketsInParamsFunctions](#bracketsinparamsfunctionsarr--)
   - [functionsInFunctionParams](#functionsinfunctionparamslambda1-----lambda2----123-lambda3--args--consolelogargs-lambda4--a---fn--functionnum-consolelognum--num)
   - [lambdaInLambda](#lambdainlambdax)
   - [functionWithComplexTypes](#functionwithcomplextypesexample-ff-objs-map)
@@ -310,7 +312,11 @@ _Returns:_ [`<number>`][number] result of `fn` execution
 
 Function with function
 
-## functionsInFunctionParams(lambda1 = () => {}, lambda2 = () => 123, lambda3 = (...args) => {console.log(args);}, lambda4 = a => {}, fn = function(num) {console.log(num + num);})
+## underscoresInParamsFunctions(num = \_\_SOME_DEFAULT\_\_VALUE\_)
+
+## bracketsInParamsFunctions(arr = \[\])
+
+## functionsInFunctionParams(lambda1 = () =\> {}, lambda2 = () =\> 123, lambda3 = (...args) =\> {console.log(args);}, lambda4 = a =\> {}, fn = function(num) {console.log(num + num);})
 
 ## lambdaInLambda(x)
 

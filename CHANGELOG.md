@@ -73,6 +73,7 @@ Update dependencies and bump version.
 - Support for functions definitions in parameters.
 - Class constructor handling.
 - Class instance handling.
+- Do not escape underscores inside word.
 
 ## [0.5.5][] - 2019-05-11
 

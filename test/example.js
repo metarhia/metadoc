@@ -185,6 +185,18 @@ const lambdaInLambda = x => y => x + y;
 // generated unless it is specified via cli or config file
 const undocumentedFunction = (a, b, c) => {};
 
+const __SOME_DEFAULT__VALUE_ = 42;
+
+const underscoresInParamsFunctions = (num = __SOME_DEFAULT__VALUE_) => {};
+
+const __ПРИВІТ_МІЙ__СВІТЕ_ = 420;
+
+// #private
+// TODO: remove #private notation when proper tests are available
+const underscoresInParamsFunctionsUnicode = (num = __ПРИВІТ_МІЙ__СВІТЕ_) => {};
+
+const bracketsInParamsFunctions = (arr = []) => {};
+
 // ExampleClass description
 // Static properties:
 //   staticProp <string> static property
@@ -414,6 +426,9 @@ module.exports = {
   callAsyncFunction,
   functionWithFunction,
   undocumentedFunction,
+  underscoresInParamsFunctions,
+  underscoresInParamsFunctionsUnicode,
+  bracketsInParamsFunctions,
 
   functionsInFunctionParams,
   lambdaInLambda,
